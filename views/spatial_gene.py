@@ -1,4 +1,5 @@
 import streamlit as st
+import urllib.request
 from persist import persist
 
 
@@ -27,11 +28,32 @@ option = a.selectbox(
 
 option2 = b.selectbox(
     'Gene',
-    list) 
+    list)
 
-    
+def url_is_alive(url):
+    """
+    Checks that a given URL is reachable.
+    :param url: A URL
+    :rtype: bool
+    """
+    request = urllib.request.Request(url)
+    request.get_method = lambda: 'HEAD'
+    try:
+        urllib.request.urlopen(request)
+        return True
+    except urllib.request.HTTPError:
+        return False
+
+image_na = "./logo/no_available_icon.png"
 a.subheader('Spatial Plot')
-a.image(f'{IMG_REPO}/spatial_expression/{option2}/{option}.png')
-b.subheader('Violin Plot') 
-b.image(f'{IMG_REPO}/violin_expression/{option2}/{option}.png')
-
+image_spatial = f"{IMG_REPO}/spatial_expression/{option2}/{option}.png"
+if url_is_alive(image_spatial):
+    a.image(image_spatial)
+else:
+    a.image(image_na)
+b.subheader('Violin Plot')
+image_violin = f"{IMG_REPO}/violin_expression/{option2}/{option}.png"
+if url_is_alive(image_violin):
+    b.image(image_violin)
+else:
+    b.image(image_na)

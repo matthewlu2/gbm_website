@@ -1,6 +1,8 @@
 import streamlit as st
 import urllib.request
 from persist import persist
+from views.utils import get_sample_metaprograms
+
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/metaprogram_tab/'
 IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/dotplot_tf_activity'
@@ -29,27 +31,30 @@ d.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
 
 # -- Single Metaprogram Images --
 
-def url_is_alive(url):
-    """
-    Checks that a given URL is reachable.
-    :param url: A URL
-    :rtype: bool
-    """
-    request = urllib.request.Request(url)
-    request.get_method = lambda: 'HEAD'
-    try:
-        urllib.request.urlopen(request)
-        return True
-    except urllib.request.HTTPError:
-        return False
+# def url_is_alive(url):
+#     """
+#     Checks that a given URL is reachable.
+#     :param url: A URL
+#     :rtype: bool
+#     """
+#     request = urllib.request.Request(url)
+#     request.get_method = lambda: 'HEAD'
+#     try:
+#         urllib.request.urlopen(request)
+#         return True
+#     except urllib.request.HTTPError:
+#         return False
     
-metaprograms = ['AC','Chromatin.Reg','Inflammatory.Mac','MES.Ast','MES.Hyp','MES','Mac','NPC','Neuron','OPC','Oligo','Prolif.Metab','Reactive.Ast','Vasc']
-l_mp = []
-for mp in metaprograms:
-    urlpath = f"https://github.com/matthewlu2/gbm_data/blob/main/metaprogram_tab/metaprogram_{mp}/{option}.png"
-    if url_is_alive(urlpath):
-        # l_mp.append(f'{IMG_REPO}/metaprogram_{mp}/{option}.png')
-        l_mp.append(mp)
+# metaprograms = ['AC','Chromatin.Reg','Inflammatory.Mac','MES.Ast','MES.Hyp','MES','Mac','NPC','Neuron','OPC','Oligo','Prolif.Metab','Reactive.Ast','Vasc']
+# l_mp = []
+# for mp in metaprograms:
+#     urlpath = f"https://github.com/matthewlu2/gbm_data/blob/main/metaprogram_tab/metaprogram_{mp}/{option}.png"
+#     if url_is_alive(urlpath):
+#         # l_mp.append(f'{IMG_REPO}/metaprogram_{mp}/{option}.png')
+#         l_mp.append(mp)
+
+d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
+l_mp = d_mp[option]
 
 option_mp = st.selectbox(
     'Metaprogram',
