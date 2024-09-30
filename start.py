@@ -53,10 +53,9 @@ metaprogram_page = st.Page(
     icon = ":material/computer:"    
 )
 
-
 dotplot_page = st.Page(
     page = "views/dotplot_across_samples.py",
-    title = "Metaprogram TF Across Sample",
+    title = "Metaprogram",
     icon = ":material/blur_linear:"  
 )
 
@@ -68,37 +67,37 @@ dotplot_tf_correlation_page = st.Page(
 
 heatmap_gene_correlation_page = st.Page(
     page = "views/heatmap_gene_correlation.py",
-    title = "Correlation Heatmaps",
+    title = "Correlation heatmaps",
     icon = ":material/labs:"
 )
 
 gene_page = st.Page(
     page = "views/spatial_gene.py",
-    title = "Spatial Gene Expression",
+    title = "Spatial gene expression",
     icon = ":material/genetics:"
 )
 
 s_tf_page = st.Page(
     page = "views/spatial_tf.py",
-    title = "Spatial TF Activity",
+    title = "Spatial TF activity",
     icon = ":material/cycle:"
 )
 
 s_pathway_page = st.Page(
     page = "views/spatial_pathway.py",
-    title = "Spatial Pathway Activity",
+    title = "Spatial pathway activity",
     icon = ":material/footprint:"
 )
 
 ligand_page = st.Page(
     page = "views/ligand_receptor.py",
-    title = "Ligand-Receptor-TF-Pathway",
+    title = "Ligand-Receptor-TF-Pathway heatmaps",
     icon = ":material/settings_input_antenna:"
 )
 
 contact_page = st.Page(
     page = "views/contact.py",
-    title = "Contact Us",
+    title = "Contact us",
     icon = ":material/contact_page:"
 )
 
@@ -115,7 +114,7 @@ pg = st.navigation(
         "Overview": [home_page, datasets_page],
         "Analysis by Sample": [metaprogram_page, gene_page, s_tf_page, s_pathway_page , ligand_page],
         "Analysis Across Samples": [ heatmap_gene_correlation_page  , dotplot_page], 
-        "Others": [contact_page, citation_page]
+        "Others": [citation_page, contact_page]
     }
 )
 
