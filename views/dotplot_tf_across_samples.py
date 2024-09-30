@@ -9,7 +9,7 @@ list = file.read().splitlines()
 
 
 option = st.selectbox(
-    'TF',
+    'Metaprogram',
     list) 
 
 st.image(f'{IMG_REPO}/{option}.png')

@@ -69,15 +69,10 @@ three.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
 
 
 
-option_2 = st.selectbox(
-    'Sample',
-    sample_list, 
-    key = 2)
-
 st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by TF</h1>", unsafe_allow_html=True)
 
 
-st.image(f'{IMG_REPO_2}/{option_2}.png')
+st.image(f'{IMG_REPO_2}/{option}.png')
 
 st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by Pathway</h1>", unsafe_allow_html=True)
 
