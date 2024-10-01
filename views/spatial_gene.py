@@ -5,7 +5,8 @@ from persist import persist
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_gene_tab/'
 
-st.title('Spatial gene expression')
+
+st.markdown("<h2 style='text-align: center; color: black;'>Spatial gene expression</h1>", unsafe_allow_html=True)  
 
 file = open('text_files/spatial_gene_names_10.txt', 'r')
 list = file.read().splitlines()

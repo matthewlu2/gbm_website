@@ -3,8 +3,8 @@ from persist import persist
 
 
 
+st.markdown("<h2 style='text-align: center; color: black;'>Spatial TF activity</h1>", unsafe_allow_html=True)  
 
-st.title('Spatial TF activity')
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_tf_tab/'
 

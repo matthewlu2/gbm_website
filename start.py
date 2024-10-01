@@ -59,12 +59,6 @@ dotplot_page = st.Page(
     # icon = ":material/blur_linear:"  
 )
 
-dotplot_tf_correlation_page = st.Page(
-    page = "views/dotplot_tf_correlation.py",
-    title = "TF Correlation",
-    # icon = ":material/blur_linear:"  
-)
-
 heatmap_gene_correlation_page = st.Page(
     page = "views/heatmap_gene_correlation.py",
     title = "Correlation heatmaps",

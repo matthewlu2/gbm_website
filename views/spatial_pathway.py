@@ -2,8 +2,8 @@ import streamlit as st
 from persist import persist
 
 
+st.markdown("<h2 style='text-align: center; color: black;'>Spatial pathway activity</h1>", unsafe_allow_html=True)  
 
-st.title('Spatial pathway activity')
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_pw_tab/'
 

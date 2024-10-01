@@ -9,7 +9,8 @@ IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/dotplot
 IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/dotplot_pw_activity'
 
 
-st.title('Metaprogram')
+st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram</h1>", unsafe_allow_html=True)  
+
 
 
 df_sample = st.session_state.df_sample
