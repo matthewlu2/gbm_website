@@ -37,74 +37,74 @@ persist("sample_id")
 home_page = st.Page(
     page = "views/home.py",
     title = "Home",
-    icon = ":material/home:",
+    # icon = ":material/home:",
     default= True,
 )
 
 datasets_page = st.Page(
     page = "views/datasets.py",
     title = "Dataset",
-    icon = ":material/dataset:"
+    # icon = ":material/dataset:"
 )
 
 metaprogram_page = st.Page(
     page = "views/metaprogram.py",
     title = "Metaprogram",
-    icon = ":material/computer:"    
+    # icon = ":material/computer:"    
 )
 
 dotplot_page = st.Page(
     page = "views/dotplot_across_samples.py",
     title = "Metaprogram",
-    icon = ":material/blur_linear:"  
+    # icon = ":material/blur_linear:"  
 )
 
 dotplot_tf_correlation_page = st.Page(
     page = "views/dotplot_tf_correlation.py",
     title = "TF Correlation",
-    icon = ":material/blur_linear:"  
+    # icon = ":material/blur_linear:"  
 )
 
 heatmap_gene_correlation_page = st.Page(
     page = "views/heatmap_gene_correlation.py",
     title = "Correlation heatmaps",
-    icon = ":material/labs:"
+    # icon = ":material/labs:"
 )
 
 gene_page = st.Page(
     page = "views/spatial_gene.py",
     title = "Spatial gene expression",
-    icon = ":material/genetics:"
+    # icon = ":material/genetics:"
 )
 
 s_tf_page = st.Page(
     page = "views/spatial_tf.py",
     title = "Spatial TF activity",
-    icon = ":material/cycle:"
+    # icon = ":material/cycle:"
 )
 
 s_pathway_page = st.Page(
     page = "views/spatial_pathway.py",
     title = "Spatial pathway activity",
-    icon = ":material/footprint:"
+    # icon = ":material/footprint:"
 )
 
 ligand_page = st.Page(
     page = "views/ligand_receptor.py",
     title = "Ligand-Receptor-TF-Pathway heatmaps",
-    icon = ":material/settings_input_antenna:"
+    # icon = ":material/settings_input_antenna:"
 )
 
 contact_page = st.Page(
     page = "views/contact.py",
     title = "Contact us",
-    icon = ":material/contact_page:"
+    # icon = ":material/contact_page:"
 )
 
 citation_page = st.Page(
     page = "views/citation.py",
     title = "Citation",
-    icon = ":material/menu_book:"
+    # icon = ":material/menu_book:"
 )
 
 # -- NAVIGATION --

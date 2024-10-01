@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from streamlit_pdf_viewer import pdf_viewer
 
-st.info('Insert Descrption')
+st.title('Correlation heatmaps')
 
 file2 = open('text_files/correlation_per_gene_names.txt', 'r')
 list2 = file2.read().splitlines()

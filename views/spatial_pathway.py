@@ -3,7 +3,7 @@ from persist import persist
 
 
 
-st.info('Insert Descrption')
+st.title('Spatial pathway activity')
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_pw_tab/'
 

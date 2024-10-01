@@ -9,7 +9,7 @@ IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/dotplot
 IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/dotplot_pw_activity'
 
 
-st.info('Insert Descrption')
+st.title('Metaprogram')
 
 
 df_sample = st.session_state.df_sample

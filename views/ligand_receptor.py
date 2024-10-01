@@ -3,7 +3,7 @@ from streamlit_pdf_viewer import pdf_viewer
 from persist import persist
 
 
-st.info('Insert Descrption')
+st.title('Ligand-Receptor-TF-Pathway heatmaps')
 
 sample_list = ['MGH258', 'UKF243', 'UKF248', 'UKF251', 'UKF255', 'UKF259', 'UKF260',
                 'UKF266', 'UKF269', 'UKF275', 'UKF296', 'UKF304', 'UKF313', 'UKF334',

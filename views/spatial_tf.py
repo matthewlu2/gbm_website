@@ -4,7 +4,7 @@ from persist import persist
 
 
 
-st.info('Insert Descrption')
+st.title('Spatial TF activity')
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_tf_tab/'
 
