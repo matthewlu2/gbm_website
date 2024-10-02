@@ -28,7 +28,7 @@ st.markdown(f"""
         .stButton > button {{
             font-size:100%;
             font-weight:bold; 
-            width: 90px;
+            width: 85px;
             color:purple;
         }}
     </style>
