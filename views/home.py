@@ -5,7 +5,7 @@ import streamlit as st
 #streamlit_analytics.start_tracking()
 #streamlit_analytics.stop_tracking()
 
-img = "./data/home1.png"
+img = "./images/home1.png"
 
 
 st.markdown("<h2 style='text-align: center;  color: black;'>Spatial Regulatory Landscape of Glioblastoma Tumor Immune Microenvironment", unsafe_allow_html=True)
