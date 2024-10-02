@@ -30,9 +30,9 @@ option2 = b.selectbox(
     'Pathway',
     (list)) 
 
-a.subheader('Spatial Plot')
+# a.subheader('Spatial Plot')
 a.image(f'{IMG_REPO}/spatial_pw_activity/HALLMARK_{option2}/{option}.png')
-b.subheader('Violin Plot')
+# b.subheader('Violin Plot')
 b.image(f'{IMG_REPO}/violin_pw_activity/HALLMARK_{option2}/{option}.png')
 
 
