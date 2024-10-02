@@ -1,7 +1,5 @@
 import streamlit as st
-from style import define_layout
 
-define_layout(max_width='100%', padding_top='0rem', padding_right='0rem', padding_left='0rem', padding_bottom='0rem')
 
 #import streamlit_analytics
 
