@@ -23,6 +23,7 @@ option = st.selectbox(
 
 b2, c2, d2 = st.columns([.001, .10, .1])
 b, c, d = st.columns([.02, .12, .12])
+c2.write("")
 c2.markdown("<h3 style='text-align: center; color: black;'>HE Stain</h1>", unsafe_allow_html=True)
 d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
