@@ -100,7 +100,7 @@ s_pathway_page = st.Page(
 )
 
 ligand_page = st.Page(
-    page = "views/ligand_receptor.py",
+    page = "views/ligand_receptor_TF_pathway.py",
     title = "Ligand-Receptor-TF-Pathway heatmaps",
     # icon = ":material/settings_input_antenna:"
 )
