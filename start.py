@@ -25,21 +25,21 @@ st.set_page_config(
 
 define_layout(max_width='80%', padding_top='2rem', padding_right='0rem', padding_left='0rem', padding_bottom='0rem')
 
-st.markdown(f"""
-    <style>
-        .stSelectbox > label {{
-            # font-size:200%; 
-            font-size: 30px;
-            font-weight:bold; 
-            color: purple;
-        }}
-        .stMultiSelect > label {{
-            font-size:105%; 
-            font-weight:bold; 
-            color:black;
-        }}
-    </style>
-    """, unsafe_allow_html=True)
+# st.markdown(f"""
+#     <style>
+#         .stSelectbox > label {{
+#             # font-size:200%; 
+#             font-size: 30px;
+#             font-weight:bold; 
+#             color: purple;
+#         }}
+#         .stMultiSelect > label {{
+#             font-size:105%; 
+#             font-weight:bold; 
+#             color:black;
+#         }}
+#     </style>
+#     """, unsafe_allow_html=True)
 
 # ---- start main ---
 
