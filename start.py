@@ -23,6 +23,22 @@ st.markdown(f"""
         unsafe_allow_html=True,
     )
 
+st.markdown(f"""
+    <style>
+        .stSelectbox > label {{
+            # font-size:200%; 
+            font-size: 30px;
+            font-weight:bold; 
+            color: purple;
+        }}
+        .stMultiSelect > label {{
+            font-size:105%; 
+            font-weight:bold; 
+            color:purple;
+        }}
+    </style>
+    """, unsafe_allow_html=True)
+
 # ---- start main ---
 
 load_widget_state()
