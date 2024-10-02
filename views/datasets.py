@@ -22,6 +22,19 @@ st.markdown("""
 
 b.table(df_sample)        
 
+
+st.markdown(f"""
+    <style>
+        .stButton > button {{
+            font-size:100%;
+            font-weight:bold; 
+            width: 90px;
+            color:purple;
+        }}
+    </style>
+""", unsafe_allow_html=True)
+
+
 sample_list = df_sample['Sample-ID'].values.tolist()
 a.text("")
 a.text("")
