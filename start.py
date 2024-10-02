@@ -23,7 +23,7 @@ st.set_page_config(
 #         unsafe_allow_html=True,
 #     )
 
-define_layout(max_width='80%', padding_top='0rem', padding_right='0rem', padding_left='0rem', padding_bottom='0rem')
+define_layout(max_width='80%', padding_top='2rem', padding_right='0rem', padding_left='0rem', padding_bottom='0rem')
 
 st.markdown(f"""
     <style>
