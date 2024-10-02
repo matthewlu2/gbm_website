@@ -4,7 +4,7 @@ from persist import persist
 
 
 st.markdown("<h2 style='text-align: center; color: black;'>Ligand-Receptor-TF-Pathway heatmaps</h1>", unsafe_allow_html=True)  
-
+st.write("")
 
 sample_list = ['MGH258', 'UKF243', 'UKF248', 'UKF251', 'UKF255', 'UKF259', 'UKF260',
                 'UKF266', 'UKF269', 'UKF275', 'UKF296', 'UKF304', 'UKF313', 'UKF334',
