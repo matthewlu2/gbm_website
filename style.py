@@ -45,3 +45,22 @@ page_style = """
         footer {visibility: hidden;} 
     </style>
 """
+
+def define_layout(max_width, padding_top='0rem', padding_right='0rem', padding_left='0rem', padding_bottom='0rem'):
+
+
+    st.markdown(
+        f"""
+        <style>
+            .appview-container .main .block-container{{
+                max-width: {max_width};
+                padding-top: {padding_top};
+                padding-right: {padding_right};
+                padding-left: {padding_left};
+                padding-bottom: {padding_bottom};
+            }}
+          
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
