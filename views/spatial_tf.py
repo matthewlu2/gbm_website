@@ -32,7 +32,7 @@ option2 = b.selectbox(
     'TF',
     list) 
     
-a.subheader('Spatial Plot')            
+# a.subheader('Spatial Plot')            
 a.image(f'{IMG_REPO}/spatial_tf_activity/{option2}/{option}.png')
-b.subheader('Violin Plot')
+# b.subheader('Violin Plot')
 b.image(f'{IMG_REPO}/violin_tf_activity/{option2}/{option}.png')
