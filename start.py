@@ -3,7 +3,7 @@ from style import page_style, footer
 import pandas as pd
 from persist import load_widget_state, persist
 from views.utils import get_sample_dataframe
-
+from style import define_layout
 
 # --- PAGE SETUP ----
 
@@ -22,6 +22,8 @@ st.set_page_config(
 #         """,
 #         unsafe_allow_html=True,
 #     )
+
+define_layout(max_width='80%', padding_top='0rem', padding_right='0rem', padding_left='0rem', padding_bottom='0rem')
 
 st.markdown(f"""
     <style>
