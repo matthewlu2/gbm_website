@@ -36,7 +36,7 @@ st.markdown(f"""
         .stMultiSelect > label {{
             font-size:105%; 
             font-weight:bold; 
-            color:purple;
+            color:black;
         }}
     </style>
     """, unsafe_allow_html=True)
