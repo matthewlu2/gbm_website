@@ -60,7 +60,7 @@ home_page = st.Page(
 )
 
 datasets_page = st.Page(
-    page = "views/datasets.py",
+    page = "views/dataset.py",
     title = "Dataset",
     # icon = ":material/dataset:"
 )
