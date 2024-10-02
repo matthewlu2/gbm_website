@@ -72,7 +72,7 @@ metaprogram_page = st.Page(
 )
 
 dotplot_page = st.Page(
-    page = "views/dotplot_across_samples.py",
+    page = "views/metaprogram_across_samples.py",
     title = "Metaprogram",
     # icon = ":material/blur_linear:"  
 )
