@@ -55,26 +55,26 @@ persist("sample_id")
 home_page = st.Page(
     page = "views/home.py",
     title = "Home",
-    icon = ":material/arrow_forward_ios:"  ,
+    icon = ":material/chevron_right:"  ,
     default= True,
 )
 
 datasets_page = st.Page(
     page = "views/dataset.py",
     title = "Dataset",
-    icon = ":material/arrow_forward_ios:"  
+    icon = ":material/chevron_right:"  
 )
 
 metaprogram_page = st.Page(
     page = "views/metaprogram.py",
     title = "Metaprogram",
-    # icon = ":material/keyboard_double_arrow_right:"    
+    icon = ":material/keyboard_double_arrow_right:"    
 )
 
 dotplot_page = st.Page(
     page = "views/metaprogram_across_samples.py",
     title = "Metaprogram",
-    # icon = ":material/blur_linear:"  
+    icon = ":material/keyboard_double_arrow_right:"  
 )
 
 heatmap_gene_correlation_page = st.Page(
@@ -110,13 +110,13 @@ ligand_page = st.Page(
 contact_page = st.Page(
     page = "views/contact.py",
     title = "Contact us",
-    icon = ":material/arrow_forward_ios:"
+    icon = ":material/chevron_right:"
 )
 
 citation_page = st.Page(
     page = "views/citation.py",
     title = "Citation",
-    icon = ":material/arrow_forward_ios:"
+    icon = ":material/chevron_right:"
 )
 
 # -- NAVIGATION --
