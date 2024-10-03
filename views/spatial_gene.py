@@ -4,6 +4,7 @@ from persist import persist
 
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_gene_tab/'
+IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/violin_data/main/violin_expression/'
 
 
 st.markdown("<h2 style='text-align: center; color: black;'>Spatial gene expression</h1>", unsafe_allow_html=True)  
@@ -51,7 +52,7 @@ if url_is_alive(image_spatial):
 else:
     a.image(image_na)
 # b.subheader('Violin Plot')
-image_violin = f"{IMG_REPO}/violin_expression/{option2}/{option}.png"
+image_violin = f"{IMG_REPO}/{option2}/{option}.png"
 if url_is_alive(image_violin):
     b.image(image_violin)
 else:
