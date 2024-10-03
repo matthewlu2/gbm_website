@@ -125,7 +125,7 @@ pg = st.navigation(
     {
         "Overview": [home_page, datasets_page],
         "Analysis by Sample": [metaprogram_page, gene_page, s_tf_page, s_pathway_page , ligand_page],
-        "Analysis Across Samples": [ heatmap_gene_correlation_page  , dotplot_page], 
+        "Analysis across Samples": [ heatmap_gene_correlation_page  , dotplot_page], 
         "Others": [citation_page, contact_page]
     }
 )
