@@ -46,7 +46,7 @@ def url_is_alive(url):
 
 image_na = "./logo/no_available_icon.png"
 # a.subheader('Spatial Plot')
-image_spatial = f"{IMG_REPO}/spatial_expression/{option2}/{option}.png"
+image_spatial = f"{IMG_REPO}/{option2}/{option}.png"
 if url_is_alive(image_spatial):
     a.image(image_spatial)
 else:
