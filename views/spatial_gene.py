@@ -47,13 +47,14 @@ def url_is_alive(url):
 image_na = "./logo/no_available_icon.png"
 # a.subheader('Spatial Plot')
 image_spatial = f"{IMG_REPO}/{option2}/{option}.png"
+st.text(image_spatial)
 if url_is_alive(image_spatial):
     a.image(image_spatial)
 else:
     a.image(image_na)
 # b.subheader('Violin Plot')
 image_violin = f"{IMG_REPO_2}/{option2}/{option}.png"
-# st.text(image_violin)
+st.text(image_violin)
 if url_is_alive(image_violin):
     b.image(image_violin)
 else:
