@@ -55,20 +55,20 @@ persist("sample_id")
 home_page = st.Page(
     page = "views/home.py",
     title = "Home",
-    # icon = ":material/home:",
+    icon = ":material/arrow_forward_ios:"  ,
     default= True,
 )
 
 datasets_page = st.Page(
     page = "views/dataset.py",
     title = "Dataset",
-    # icon = ":material/dataset:"
+    icon = ":material/arrow_forward_ios:"  
 )
 
 metaprogram_page = st.Page(
     page = "views/metaprogram.py",
     title = "Metaprogram",
-    # icon = ":material/computer:"    
+    # icon = ":material/keyboard_double_arrow_right:"    
 )
 
 dotplot_page = st.Page(
@@ -80,43 +80,43 @@ dotplot_page = st.Page(
 heatmap_gene_correlation_page = st.Page(
     page = "views/heatmap_gene_correlation.py",
     title = "Correlation heatmaps",
-    # icon = ":material/labs:"
+    icon = ":material/keyboard_double_arrow_right:"
 )
 
 gene_page = st.Page(
     page = "views/spatial_gene.py",
     title = "Spatial gene expression",
-    # icon = ":material/genetics:"
+    icon = ":material/keyboard_double_arrow_right:"
 )
 
 s_tf_page = st.Page(
     page = "views/spatial_tf.py",
     title = "Spatial TF activity",
-    # icon = ":material/cycle:"
+    icon = ":material/keyboard_double_arrow_right:"
 )
 
 s_pathway_page = st.Page(
     page = "views/spatial_pathway.py",
     title = "Spatial pathway activity",
-    # icon = ":material/footprint:"
+    icon = ":material/keyboard_double_arrow_right:"
 )
 
 ligand_page = st.Page(
     page = "views/ligand_receptor_TF_pathway.py",
     title = "Ligand-Receptor-TF-Pathway heatmaps",
-    # icon = ":material/settings_input_antenna:"
+    icon = ":material/keyboard_double_arrow_right:"
 )
 
 contact_page = st.Page(
     page = "views/contact.py",
     title = "Contact us",
-    # icon = ":material/contact_page:"
+    icon = ":material/arrow_forward_ios:"
 )
 
 citation_page = st.Page(
     page = "views/citation.py",
     title = "Citation",
-    # icon = ":material/menu_book:"
+    icon = ":material/arrow_forward_ios:"
 )
 
 # -- NAVIGATION --
