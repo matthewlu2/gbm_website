@@ -4,7 +4,7 @@ from persist import persist
 
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_gene_tab/'
-IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/violin_data/blob/main/violin_expression'
+IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/violin_data/main/violin_expression'
 
 
 st.markdown("<h2 style='text-align: center; color: black;'>Spatial gene expression</h1>", unsafe_allow_html=True)  
