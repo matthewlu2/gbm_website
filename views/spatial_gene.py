@@ -3,7 +3,7 @@ import urllib.request
 from persist import persist
 
 
-IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_gene_tab/'
+IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/spatial-plots/main/spatial_expression'
 IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/violin_data/main/violin_expression'
 
 
