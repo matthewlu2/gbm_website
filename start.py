@@ -68,43 +68,43 @@ datasets_page = st.Page(
 metaprogram_page = st.Page(
     page = "views/metaprogram.py",
     title = "Metaprogram",
-    icon = ":material/keyboard_double_arrow_right:"    
+    icon = ":material/chevron_right:"    
 )
 
 dotplot_page = st.Page(
     page = "views/metaprogram_across_samples.py",
     title = "Metaprogram",
-    icon = ":material/keyboard_double_arrow_right:"  
+    icon = ":material/chevron_right:"  
 )
 
 heatmap_gene_correlation_page = st.Page(
     page = "views/heatmap_gene_correlation.py",
     title = "Correlation heatmaps",
-    icon = ":material/keyboard_double_arrow_right:"
+    icon = ":material/chevron_right:"
 )
 
 gene_page = st.Page(
     page = "views/spatial_gene.py",
     title = "Spatial gene expression",
-    icon = ":material/keyboard_double_arrow_right:"
+    icon = ":material/chevron_right:"
 )
 
 s_tf_page = st.Page(
     page = "views/spatial_tf.py",
     title = "Spatial TF activity",
-    icon = ":material/keyboard_double_arrow_right:"
+    icon = ":material/chevron_right:"
 )
 
 s_pathway_page = st.Page(
     page = "views/spatial_pathway.py",
     title = "Spatial pathway activity",
-    icon = ":material/keyboard_double_arrow_right:"
+    icon = ":material/chevron_right:"
 )
 
 ligand_page = st.Page(
     page = "views/ligand_receptor_TF_pathway.py",
     title = "Ligand-Receptor-TF-Pathway heatmaps",
-    icon = ":material/keyboard_double_arrow_right:"
+    icon = ":material/chevron_right:"
 )
 
 contact_page = st.Page(
