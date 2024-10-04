@@ -28,7 +28,7 @@ c2.markdown("<h3 style='text-align: center; color: black;'>HE Stain</h1>", unsaf
 
 d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
 c.write("")
-c.write("")
+
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 d.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
 
