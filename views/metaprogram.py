@@ -4,9 +4,9 @@ from persist import persist
 from views.utils import get_sample_metaprograms
 
 
-IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/metaprogram_tab/'
-IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/dotplot_tf_activity'
-IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/dotplot_pw_activity'
+IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/metaprogram_tab/'
+IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_tf_activity'
+IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_pw_activity'
 
 
 st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram</h1>", unsafe_allow_html=True)  

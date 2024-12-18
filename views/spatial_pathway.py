@@ -5,7 +5,7 @@ from persist import persist
 st.markdown("<h2 style='text-align: center; color: black;'>Spatial pathway activity</h1>", unsafe_allow_html=True)  
 st.write("")
 
-IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_data/main/spatial_pw_tab/'
+IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/spatial_pw_tab/'
 
 file = open('text_files/spatial_pw_activity_names.txt', 'r')
 list = file.read().splitlines()
