@@ -77,6 +77,12 @@ dotplot_page = st.Page(
     icon = ":material/chevron_right:"  
 )
 
+drug2cell_page = st.Page(
+    page = "views/drug2cell.py",
+    title = "Drug2Cell",
+    icon = ":material/chevron_right:"
+)
+
 heatmap_gene_correlation_page = st.Page(
     page = "views/heatmap_gene_correlation.py",
     title = "Correlation heatmaps",
@@ -124,7 +130,7 @@ citation_page = st.Page(
 pg = st.navigation(
     {
         "Overview": [home_page, datasets_page],
-        "Analysis by Sample": [metaprogram_page, gene_page, s_tf_page, s_pathway_page , ligand_page],
+        "Analysis by Sample": [metaprogram_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page, ligand_page],
         "Analysis across Samples": [ heatmap_gene_correlation_page  , dotplot_page], 
         "Others": [citation_page, contact_page]
     }
