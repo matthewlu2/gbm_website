@@ -5,7 +5,7 @@ from views.utils import get_sample_metaprograms
 
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/spatial_drug2cell'
-IMG_REPO2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/violin_drug2cell_new'
+IMG_REPO2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/violin_drug2cell'
 
 st.markdown("<h2 style='text-align: center; color: black;'>Drug2Cell</h1>", unsafe_allow_html=True)  
 st.write("")
@@ -21,6 +21,7 @@ option = b.selectbox(
 
 df_sample = st.session_state.df_sample
 sample_list = df_sample['Sample-ID'].values.tolist()
+
 option2 = a.selectbox(
     label='Sample',
     options=sample_list,
