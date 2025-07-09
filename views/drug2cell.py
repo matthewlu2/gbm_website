@@ -30,4 +30,4 @@ option2 = a.selectbox(
 
 a.image(f'{IMG_REPO}/{option}/{option2}.png')
 b.image(f'{IMG_REPO2}/{option}/{option2}.png')
-st.write(f'{IMG_REPO2}/{option}/{option2}.png'
+st.write(f'{IMG_REPO2}/{option}/{option2}.png')
