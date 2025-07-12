@@ -8,8 +8,8 @@ st.write("")
 
 st.info("""Compare how regulatory features linked to transcriptional metaprograms vary across multiple glioblastoma samples.  
 • **TF**: Examine transcription factors associated with each metaprogram to see which are consistently or differentially active across tumors.  
-• Pathway: Explore pathway activation linked to specific metaprograms, uncovering shared or distinct signaling programs.  
-• Drug: Assess predicted drug response signatures tied to different metaprograms, highlighting therapeutic vulnerabilities across the cohort.  
+• **Pathway**: Explore pathway activation linked to specific metaprograms, uncovering shared or distinct signaling programs.  
+• **Drug**: Assess predicted drug response signatures tied to different metaprograms, highlighting therapeutic vulnerabilities across the cohort.  
 Use interactive plots and selectors to identify regulatory patterns and drug sensitivities tied to key malignant and non-malignant programs.""")
 
 file = open('text_files/dotplot_tf_names.txt', 'r')
