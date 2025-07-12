@@ -2,8 +2,10 @@ import streamlit as st
 from persist import persist
 
 
-st.markdown("<h2 style='text-align: center; color: black;'>Spatial pathway activity</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>Spatial Pathway Activity</h1>", unsafe_allow_html=True)  
 st.write("")
+
+st.info("View spatially inferred pathway activities across glioblastoma samples using the SPAN framework. Explore how major signaling and metabolic pathways—such as hypoxia, proliferation, and immune signaling—are distributed within the tumor microenvironment. Overlay pathway maps on histology images to uncover spatial heterogeneity and identify pathway activation linked to specific malignant or non-malignant programs. Comparative violin plots let you explore pathway variation across metaprograms. Use the search box and sample selector to navigate.")
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/spatial_pw_tab/'
 
