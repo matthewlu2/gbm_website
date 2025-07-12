@@ -7,8 +7,10 @@ from views.utils import get_sample_metaprograms
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/spatial_drug2cell'
 IMG_REPO2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/violin_drug2cell'
 
-st.markdown("<h2 style='text-align: center; color: black;'>Spatial Drug2Cell score</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>Spatial Drug2Cell Score</h1>", unsafe_allow_html=True)  
 st.write("")
+
+st.info("Integrate spatial transcriptomic data with Drug2Cell predictions to map drug sensitivity scores across glioblastoma samples. Identify tumor regions that may respond to specific drugs based on local transcription factor and pathway activity profiles. Compare drug scores across metaprograms to uncover therapeutic targets tied to distinct tumor niches or cellular states. Use the search box to enter drug names and the sample selector to explore across different tumors.")
 
 file = open('text_files/drug2cell_names.txt', 'r')
 list = file.read().splitlines()
