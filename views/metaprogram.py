@@ -9,9 +9,10 @@ IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/d
 IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_pw_activity'
 
 
-st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram Spatial Distribution</h1>", unsafe_allow_html=True)  
 st.write("")
 
+st.info("Visualize the spatial distribution of 14 transcriptional metaprograms within glioblastoma tissue samples. These metaprograms capture key malignant subtypes—such as mesenchymal, neural progenitor-like, and proliferative states—as well as important non-malignant populations, including immune, vascular, and glial cells. Use the interactive map to select and explore metaprograms, viewing their spatial localization alongside histology images and related molecular features such as transcription factor and pathway activities, as well as predicted drug sensitivities across each sample.")
 
 df_sample = st.session_state.df_sample
 sample_list = df_sample['Sample-ID'].values.tolist()
