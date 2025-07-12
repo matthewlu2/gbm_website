@@ -79,7 +79,7 @@ dotplot_page = st.Page(
 
 drug2cell_page = st.Page(
     page = "views/drug2cell.py",
-    title = "Drug2Cell",
+    title = "Spatial Drug2Cell score",
     icon = ":material/chevron_right:"
 )
 
