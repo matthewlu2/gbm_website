@@ -73,7 +73,7 @@ metaprogram_page = st.Page(
 
 dotplot_page = st.Page(
     page = "views/metaprogram_across_samples.py",
-    title = "Metaprogram",
+    title = "Ligand-Receptor-TF-Pathway Correlation",  #Metaprogram
     icon = ":material/chevron_right:"  
 )
 
@@ -85,7 +85,7 @@ drug2cell_page = st.Page(
 
 heatmap_gene_correlation_page = st.Page(
     page = "views/heatmap_gene_correlation.py",
-    title = "Correlation heatmaps",
+    title = "Metaprogram-specific",  #Correlation heatmaps
     icon = ":material/chevron_right:"
 )
 
