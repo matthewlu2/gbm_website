@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from streamlit_pdf_viewer import pdf_viewer
 
-IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/blob/main'
+IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 
 st.markdown("<h2 style='text-align: center; color: black;'>Ligand–Receptor–TF–Pathway Correlation</h1>", unsafe_allow_html=True)  
 st.write("")
