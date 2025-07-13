@@ -72,7 +72,7 @@ metaprogram_page = st.Page(
 )
 
 dotplot_page = st.Page(
-    page = "views/Metaprogram-specifi.py",
+    page = "views/Metaprogram-specific.py",
     title = "Metaprogram-specific",  #Metaprogram
     icon = ":material/chevron_right:"  
 )
