@@ -46,4 +46,4 @@ option_drug = st.selectbox(
     'Drug',
     list) 
 st.image(f'{IMG_REPO}/corr_with_{option}/{option_drug}.png')
-# st.write(f'{IMG_REPO}/corr_with_{option}/{option_drug}.png')
+st.write(f'{IMG_REPO}/corr_with_{option}/{option_drug}.png')
