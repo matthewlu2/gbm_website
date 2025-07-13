@@ -17,7 +17,7 @@ list = file.read().splitlines()
 option_gene = st.selectbox(
     'Gene',
     list) 
-st.image(f'{IMG_REPO}/corr_with_{option}/{option_gene}.png')
+st.pdf(f'{IMG_REPO}/corr_with_{option}/{option_gene}.pdf')
 # pdf_viewer(input = f'data/correlation_per_gene/{option2}.pdf')
 
 # st.write("")
@@ -36,7 +36,7 @@ list = file.read().splitlines()
 option_pw = st.selectbox(
     'Pathway',
     list) 
-st.image(f'{IMG_REPO}/corr_with_{option}/{option_pw}.png')
+st.pdf(f'{IMG_REPO}/corr_with_{option}/{option_pw}.pdf')
 
 st.write("")
 option = "Drug"
@@ -45,5 +45,5 @@ list = file.read().splitlines()
 option_drug = st.selectbox(
     'Drug',
     list) 
-st.image(f'{IMG_REPO}/corr_with_{option}/{option_drug}.png')
+st.pdf(f'{IMG_REPO}/corr_with_{option}/{option_drug}.pdf')
 st.write(f'{IMG_REPO}/corr_with_{option}/{option_drug}.png')
