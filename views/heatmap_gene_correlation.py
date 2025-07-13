@@ -36,7 +36,7 @@ list = file.read().splitlines()
 option_pw = st.selectbox(
     'Pathway',
     list) 
-st.pdf(f'{IMG_REPO}/corr_with_{option}/{option_pw}.pdf')
+st.image(f'{IMG_REPO}/corr_with_{option}/{option_pw}.png')
 
 st.write("")
 option = "Drug"
@@ -45,5 +45,5 @@ list = file.read().splitlines()
 option_drug = st.selectbox(
     'Drug',
     list) 
-st.pdf(f'{IMG_REPO}/corr_with_{option}/{option_drug}.pdf')
-st.write(f'{IMG_REPO}/corr_with_{option}/{option_drug}.png')
+st.image(f'{IMG_REPO}/corr_with_{option}/{option_drug}.png')
+# st.write(f'{IMG_REPO}/corr_with_{option}/{option_drug}.png')
