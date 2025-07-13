@@ -20,14 +20,14 @@ option_gene = st.selectbox(
 st.image(f'{IMG_REPO}/corr_with_{option}/{option_gene}.png')
 # pdf_viewer(input = f'data/correlation_per_gene/{option2}.pdf')
 
-st.wirte("")
-option = "tf"
-file = open('text_files/correlation_per_tf_names.txt', 'r')
-list = file.read().splitlines()
-option_tf = st.selectbox(
-    'TF',
-    list) 
-st.image(f'{IMG_REPO}/corr_with_{option}/{option_tf}.png')
+# st.wirte("")
+# option = "tf"
+# file = open('text_files/correlation_per_tf_names.txt', 'r')
+# list = file.read().splitlines()
+# option_tf = st.selectbox(
+#     'TF',
+#     list) 
+# st.image(f'{IMG_REPO}/corr_with_{option}/{option_tf}.png')
 
 st.wirte("")
 option = "pathway"
