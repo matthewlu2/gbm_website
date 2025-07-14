@@ -31,4 +31,6 @@ st.image(f'{IMG_REPO_2}/{option}.png')
 
 a2, b2 = st.columns([.95, .05])
 a2.markdown("<h3 style='text-align: center; color: black;'>Drug Score</h1>", unsafe_allow_html=True)
-st.image(f'{IMG_REPO_3}/{option}.png')
+
+c1,c2,c3 = st.columns([0.2, 0.6, 0.2])
+c2.image(f'{IMG_REPO_3}/{option}.png')
