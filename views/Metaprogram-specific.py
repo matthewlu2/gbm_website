@@ -2,6 +2,7 @@ import streamlit as st
 
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_tf_activity'
 IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_pw_activity'
+IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_drug_score'
 
 st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram-specific</h1>", unsafe_allow_html=True)  
 st.write("")
@@ -23,6 +24,11 @@ option = st.selectbox(
 a, b = st.columns([.95, .05])
 a.markdown("<h3 style='text-align: center; color: black;'>TF</h1>", unsafe_allow_html=True)
 st.image(f'{IMG_REPO}/{option}.png')
+
 a1, b1 = st.columns([.95, .05])
 a1.markdown("<h3 style='text-align: center; color: black;'>Pathway</h1>", unsafe_allow_html=True)
 st.image(f'{IMG_REPO_2}/{option}.png')
+
+a2, b2 = st.columns([.95, .05])
+a2.markdown("<h3 style='text-align: center; color: black;'>Drug Score</h1>", unsafe_allow_html=True)
+st.image(f'{IMG_REPO_3}/{option}.png')
