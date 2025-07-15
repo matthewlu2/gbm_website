@@ -94,3 +94,4 @@ st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by Drug2C
 
 a, b = st.columns([.11, .95])
 b.image(f'{IMG_REPO_4}/{option}.png')
+st.write(f'{IMG_REPO_4}/{option}.png')
