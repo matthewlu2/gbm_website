@@ -7,7 +7,7 @@ from views.utils import get_sample_metaprograms
 IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/metaprogram_tab/'
 IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_tf_activity'
 IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_pw_activity'
-
+IMG_REPO_4 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_drug_score'
 
 st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram Spatial Distribution</h1>", unsafe_allow_html=True)  
 st.write("")
@@ -89,3 +89,8 @@ st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by Pathwa
 
 i, j = st.columns([.11, .95])
 j.image(f'{IMG_REPO_3}/{option}.png')
+
+st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by Drug2Cell</h1>", unsafe_allow_html=True)
+
+a, b = st.columns([.11, .95])
+b.image(f'{IMG_REPO_4}/{option}.png')
