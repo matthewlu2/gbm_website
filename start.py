@@ -53,7 +53,7 @@ df_sample = get_sample_dataframe('./data/dataset.csv')
 st.session_state['df_sample'] = df_sample
 persist("sample_id")
 
-emoji = "🔹" #"💠"
+emoji = "🔸" #"🔹" #"💠"
 
 # home_page = st.Page(
 #     page = "views/home.py",
@@ -209,8 +209,8 @@ citation_page = st.Page(
 pg = st.navigation(
     {
         "": [home_page, datasets_page],
-        "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
-        "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
+        # "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
+        # "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
         "Resources": [citation_page, contact_page]
     }
 )
