@@ -1,5 +1,5 @@
 import streamlit as st
-from views.utils import get_sample_metaprograms
+# from views.utils import get_sample_metaprograms
 
 IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 # IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_tf_activity'
@@ -15,13 +15,13 @@ st.info("""Compare how regulatory features linked to transcriptional metaprogram
 • **Drug**: Assess predicted drug response signatures tied to different metaprograms, highlighting therapeutic vulnerabilities across the cohort.  
 Use interactive plots and selectors to identify regulatory patterns and drug sensitivities tied to key malignant and non-malignant programs.""")
 
-# file = open('text_files/dotplot_tf_names.txt', 'r')
-# list = file.read().splitlines()
+file = open('text_files/dotplot_tf_names.txt', 'r')
+list = file.read().splitlines()
 
 
-# option = st.selectbox(
-#     'Metaprogram',
-#     list) 
+option = st.selectbox(
+    'Metaprogram',
+    list) 
 
 # a, b = st.columns([.95, .05])
 # a.markdown("<h3 style='text-align: center; color: black;'>TF</h1>", unsafe_allow_html=True)
@@ -36,13 +36,13 @@ Use interactive plots and selectors to identify regulatory patterns and drug sen
 # st.image(f'{IMG_REPO_3}/{option}.png')
 
 
-d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
-l_mp = d_mp[option]
+# d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
+# l_mp = d_mp[option]
 
-option_mp = st.selectbox(
-    'Metaprogram',
-    l_mp
-)
+# option_mp = st.selectbox(
+#     'Metaprogram',
+#     l_mp
+# )
 st.markdown("<h3 style='text-align: center; color: black;'>Top TFs across samples</h1>", unsafe_allow_html=True)
 st.image(f'{IMG_REPO}/across_sample_top_transcriptions_per_metaprogram/{option_mp}.png')
 
