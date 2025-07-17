@@ -143,18 +143,56 @@ citation_page = st.Page(
 #     }
 # )
 
-pg = st.navigation([
-    {"name": "Home", "path": "home", "content": home_page},
-    # { "Dataset Explorer": datasets_page},
-    {
-        "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
-        "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
+# pg = st.navigation([
+#     # {"name": "Home", "path": "home", "content": home_page},
+#     # { "Dataset Explorer": datasets_page},
+#     {
+#         "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
+#         "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
        
+#     },
+#     # { "Citation": citation_page}, 
+#     # {  "Contact Us": contact_page}
+# ]
+# )
+pg = st.navigation([
+    # Top-level page: Home
+    {"name": "Home", "path": "home", "content": home_page},
+
+    # Another top-level page
+    {"name": "Dataset Explorer", "path": "datasets", "content": datasets_page},
+
+    # Section: Analysis of Individual Samples
+    {
+        "section": "Analysis of Individual Samples",
+        "pages": [
+            {"name": "Metaprogram", "path": "metaprogram", "content": metaprogram_page},
+            {"name": "Metaprogram Feature", "path": "metafeature", "content": metaprogram_feature_page},
+            {"name": "Gene", "path": "gene", "content": gene_page},
+            {"name": "TF", "path": "tf", "content": s_tf_page},
+            {"name": "Pathway", "path": "pathway", "content": s_pathway_page},
+            {"name": "Drug2Cell", "path": "drug2cell", "content": drug2cell_page},
+        ],
     },
-    # { "Citation": citation_page}, 
-    # {  "Contact Us": contact_page}
-]
-)
+
+    # Section: Comparison Across Samples
+    {
+        "section": "Comparison Across Samples",
+        "pages": [
+            {"name": "Dotplot", "path": "dotplot", "content": dotplot_page},
+            {"name": "Heatmap Correlation", "path": "heatmap", "content": heatmap_gene_correlation_page},
+        ],
+    },
+
+    # Section: Other
+    {
+        "section": "Other",
+        "pages": [
+            {"name": "Citation", "path": "citation", "content": citation_page},
+            {"name": "Contact Us", "path": "contact", "content": contact_page},
+        ],
+    },
+])
 
 
 # -- SHARED ON ALL PAGES --
