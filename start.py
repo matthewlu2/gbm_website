@@ -56,62 +56,62 @@ persist("sample_id")
 home_page = st.Page(
     page = "views/home.py",
     title = "Home",
-    icon = ":material/chevron_right:"  ,
+    icon = ":material/home:",   #":material/chevron_right:"  ,
     default= True,
 )
 
 datasets_page = st.Page(
     page = "views/dataset.py",
     title = "Dataset Explorer",
-    icon = ":material/chevron_right:"  
+    icon = ":material/table_chart:"  
 )
 
 metaprogram_page = st.Page(
     page = "views/metaprogram.py",
     title = "Metaprogram Maps",
-    icon = ":material/chevron_right:"    
+    icon = ":material/data_array:"    
 )
 
 metaprogram_feature_page = st.Page(
     page = "views/metaprogram_feature.py",
     title = "Metaprogram-Associated Features",
-    icon = ":material/chevron_right:"    
+    icon = ":material/extension:"    
 )
 
 dotplot_page = st.Page(
     page = "views/Metaprogram-specific.py",
     title = "Metaprogram-Centric Comparison",  #Metaprogram
-    icon = ":material/chevron_right:"  
+    icon = ":material/bar_chart:"  
 )
 
 drug2cell_page = st.Page(
     page = "views/drug2cell.py",
     title = "Drug2Cell Score Maps",
-    icon = ":material/chevron_right:"
+    icon = ":material/medication:"
 )
 
 heatmap_gene_correlation_page = st.Page(
     page = "views/Ligand–Receptor–TF–Pathway_Correlation.py",
     title = "L-R-TF-Pathway-Drug Correlation Heatmap",  #Correlation heatmaps
-    icon = ":material/chevron_right:"
+    icon = ":material/loop:"
 )
 
 gene_page = st.Page(
     page = "views/spatial_gene.py",
     title = "Gene Expression Maps",
-    icon = ":material/chevron_right:"
+    icon = ":material/biotech:"
 )
 
 s_tf_page = st.Page(
     page = "views/spatial_tf.py",
     title = "TF Activity Maps",
-    icon = ":material/chevron_right:"
+    icon = ":material/psychology:"
 )
 
 s_pathway_page = st.Page(
     page = "views/spatial_pathway.py",
     title = "Pathway Activity Maps",
-    icon = ":material/chevron_right:"
+    icon = ":material/shuffle:"
 )
 
 # ligand_page = st.Page(
@@ -123,13 +123,13 @@ s_pathway_page = st.Page(
 contact_page = st.Page(
     page = "views/contact.py",
     title = "Contact us",
-    icon = ":material/chevron_right:"
+    icon = ":material/send:"
 )
 
 citation_page = st.Page(
     page = "views/citation.py",
     title = "Citation",
-    icon = ":material/chevron_right:"
+    icon = ":material/menu_book:"
 )
 
 # -- NAVIGATION --
