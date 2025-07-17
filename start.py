@@ -155,14 +155,11 @@ citation_page = st.Page(
 #     # {  "Contact Us": contact_page}
 # ]
 # )
-pg = st.navigation([
-    # Top-level page: Home
+import inspect
+
+pages = [
     {"name": "Home", "path": "home", "content": home_page},
-
-    # Another top-level page
     {"name": "Dataset Explorer", "path": "datasets", "content": datasets_page},
-
-    # Section: Analysis of Individual Samples
     {
         "section": "Analysis of Individual Samples",
         "pages": [
@@ -174,8 +171,6 @@ pg = st.navigation([
             {"name": "Drug2Cell", "path": "drug2cell", "content": drug2cell_page},
         ],
     },
-
-    # Section: Comparison Across Samples
     {
         "section": "Comparison Across Samples",
         "pages": [
@@ -183,8 +178,6 @@ pg = st.navigation([
             {"name": "Heatmap Correlation", "path": "heatmap", "content": heatmap_gene_correlation_page},
         ],
     },
-
-    # Section: Other
     {
         "section": "Other",
         "pages": [
@@ -192,7 +185,18 @@ pg = st.navigation([
             {"name": "Contact Us", "path": "contact", "content": contact_page},
         ],
     },
-])
+]
+
+# Debug: Check each content is callable
+for item in pages:
+    if "content" in item:
+        assert callable(item["content"]), f"'{item['name']}' content is not callable"
+    elif "pages" in item:
+        for sub in item["pages"]:
+            assert callable(sub["content"]), f"'{sub['name']}' content is not callable"
+
+pg = st.navigation(pages)
+
 
 
 # -- SHARED ON ALL PAGES --
