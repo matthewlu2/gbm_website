@@ -155,6 +155,22 @@
 
 
 import streamlit as st
-st.write("Streamlit version:", st.__version__)
+
+def home():
+    st.title("Home Page")
+
+def about():
+    st.title("About Page")
+
+pg = st.navigation([
+    {"name": "Home", "path": "home", "content": home},
+    {
+        "section": "More",
+        "pages": [
+            {"name": "About", "path": "about", "content": about},
+        ],
+    }
+])
+
 
 
