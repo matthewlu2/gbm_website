@@ -19,7 +19,7 @@ file = open('text_files/dotplot_tf_names.txt', 'r')
 list = file.read().splitlines()
 
 
-option = st.selectbox(
+option_mp = st.selectbox(
     'Metaprogram',
     list) 
 
