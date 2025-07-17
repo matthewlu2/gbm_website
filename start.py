@@ -155,48 +155,22 @@ citation_page = st.Page(
 #     # {  "Contact Us": contact_page}
 # ]
 # )
-import inspect
 
-pages = [
-    {"name": "Home", "path": "home", "content": home_page},
-    {"name": "Dataset Explorer", "path": "datasets", "content": datasets_page},
+def home():
+    st.title("Home Page")
+
+def about():
+    st.title("About Page")
+
+pg = st.navigation([
+    {"name": "Home", "path": "home", "content": home},
     {
-        "section": "Analysis of Individual Samples",
+        "section": "More",
         "pages": [
-            {"name": "Metaprogram", "path": "metaprogram", "content": metaprogram_page},
-            {"name": "Metaprogram Feature", "path": "metafeature", "content": metaprogram_feature_page},
-            {"name": "Gene", "path": "gene", "content": gene_page},
-            {"name": "TF", "path": "tf", "content": s_tf_page},
-            {"name": "Pathway", "path": "pathway", "content": s_pathway_page},
-            {"name": "Drug2Cell", "path": "drug2cell", "content": drug2cell_page},
+            {"name": "About", "path": "about", "content": about},
         ],
-    },
-    {
-        "section": "Comparison Across Samples",
-        "pages": [
-            {"name": "Dotplot", "path": "dotplot", "content": dotplot_page},
-            {"name": "Heatmap Correlation", "path": "heatmap", "content": heatmap_gene_correlation_page},
-        ],
-    },
-    {
-        "section": "Other",
-        "pages": [
-            {"name": "Citation", "path": "citation", "content": citation_page},
-            {"name": "Contact Us", "path": "contact", "content": contact_page},
-        ],
-    },
-]
-
-# Debug: Check each content is callable
-for item in pages:
-    if "content" in item:
-        assert callable(item["content"]), f"'{item['name']}' content is not callable"
-    elif "pages" in item:
-        for sub in item["pages"]:
-            assert callable(sub["content"]), f"'{sub['name']}' content is not callable"
-
-pg = st.navigation(pages)
-
+    }
+])
 
 
 # -- SHARED ON ALL PAGES --
