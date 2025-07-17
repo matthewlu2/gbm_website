@@ -1,7 +1,7 @@
 import streamlit as st
 from persist import persist
 
-
+IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 
 st.markdown("<h2 style='text-align: center; color: black;'>Spatial Transcription Factor (TF) Activity</h1>", unsafe_allow_html=True)  
 st.write("")
@@ -33,3 +33,7 @@ option2 = b.selectbox(
 a.image(f'{IMG_REPO}/spatial_tf_activity/{option2}/{option}.png')
 # b.subheader('Violin Plot')
 b.image(f'{IMG_REPO}/violin_tf_activity/{option2}/{option}.png')
+
+
+st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by TF</h1>", unsafe_allow_html=True)
+st.image(f'{IMG_REPO}/across_metaprogram_top_transcriptions_per_sample/{option}.png')
