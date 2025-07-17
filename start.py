@@ -61,69 +61,63 @@ home_page = st.Page(
 
 datasets_page = st.Page(
     page = "views/dataset.py",
-    title = "Dataset",
+    title = "Dataset Explorer",
     icon = ":material/chevron_right:"  
 )
 
 metaprogram_page = st.Page(
     page = "views/metaprogram.py",
-    title = "Metaprogram spatial distribution",
+    title = "Metaprogram Maps",
     icon = ":material/chevron_right:"    
 )
 
 metaprogram_feature_page = st.Page(
     page = "views/metaprogram_feature.py",
-    title = "Metaprogram related features",
-    icon = ":material/chevron_right:"    
-)
-
-metaprogram_sample_page = st.Page(
-    page = "views/metaprogram_sample.py",
-    title = "Sample Specific Metaprogram",
+    title = "Metaprogram-associated Features",
     icon = ":material/chevron_right:"    
 )
 
 dotplot_page = st.Page(
     page = "views/Metaprogram-specific.py",
-    title = "Metaprogram-specific",  #Metaprogram
+    title = "Metaprogram-centric Comparison",  #Metaprogram
     icon = ":material/chevron_right:"  
 )
 
 drug2cell_page = st.Page(
     page = "views/drug2cell.py",
-    title = "Spatial Drug2Cell score",
+    title = "Drug2Cell Score Maps",
     icon = ":material/chevron_right:"
 )
 
 heatmap_gene_correlation_page = st.Page(
     page = "views/Ligand–Receptor–TF–Pathway_Correlation.py",
-    title = "Ligand-Receptor-TF-Pathway Correlation",  #Correlation heatmaps
+    title = "L-R-TF-Pathway-Drug Correlation Heatmap",  #Correlation heatmaps
     icon = ":material/chevron_right:"
 )
 
 gene_page = st.Page(
     page = "views/spatial_gene.py",
-    title = "Spatial gene expression",
+    title = "Gene expression Maps",
     icon = ":material/chevron_right:"
 )
 
 s_tf_page = st.Page(
     page = "views/spatial_tf.py",
-    title = "Spatial TF activity",
+    title = "TF Activity Maps",
     icon = ":material/chevron_right:"
 )
 
 s_pathway_page = st.Page(
     page = "views/spatial_pathway.py",
-    title = "Spatial pathway activity",
+    title = "Pathway Activity Maps",
     icon = ":material/chevron_right:"
 )
 
-ligand_page = st.Page(
-    page = "views/ligand_receptor_TF_pathway.py",
-    title = "Ligand-Receptor-TF-Pathway heatmaps",
-    icon = ":material/chevron_right:"
-)
+# ligand_page = st.Page(
+#     page = "views/ligand_receptor_TF_pathway.py",
+#     title = "Ligand-Receptor-TF-Pathway heatmaps",
+#     icon = ":material/chevron_right:"
+# )
 
 contact_page = st.Page(
     page = "views/contact.py",
@@ -139,12 +133,23 @@ citation_page = st.Page(
 
 # -- NAVIGATION --
 
+# pg = st.navigation(
+#     {
+#         "Overview": [home_page, datasets_page],
+#         "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
+#         "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
+#         "Others": [citation_page, contact_page]
+#     }
+# )
+
 pg = st.navigation(
     {
-        "Overview": [home_page, datasets_page],
-        "Analysis by Sample": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
-        "Analysis across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
-        "Others": [citation_page, contact_page]
+        "Home": home_page,
+        "Dataset Explorer": datasets_page,
+        "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
+        "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
+        "Citation": citation_page, 
+        "Contact Us": contact_page
     }
 )
 
