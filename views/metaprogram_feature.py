@@ -1,7 +1,7 @@
 import streamlit as st
 import urllib.request
 from persist import persist
-from views.utils import get_sample_metaprograms
+# from views.utils import get_sample_metaprograms
 
 IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 
