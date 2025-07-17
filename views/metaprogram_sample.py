@@ -28,10 +28,6 @@ one1, two1, three1= st.columns([0.001, .20, .18])
 one, two, three= st.columns([0.001, .25, .18])
 
 
-two1.markdown("<h3 style='text-align: center; color: black;'>Metaprograms</h1>", unsafe_allow_html=True)
-three1.markdown("<h3 style='text-align: center; color: black;'>Single Metaprogram</h1>", unsafe_allow_html=True)
-
-
 two.image(f'{IMG_REPO}/metaprogram/{option}.png')
 three.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
 
