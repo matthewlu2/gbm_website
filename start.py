@@ -71,6 +71,12 @@ metaprogram_page = st.Page(
     icon = ":material/chevron_right:"    
 )
 
+metaprogram_sample_page = st.Page(
+    page = "views/metaprogram_sample.py",
+    title = "Sample Specific Metaprogram",
+    icon = ":material/chevron_right:"    
+)
+
 dotplot_page = st.Page(
     page = "views/Metaprogram-specific.py",
     title = "Metaprogram-specific",  #Metaprogram
@@ -130,7 +136,7 @@ citation_page = st.Page(
 pg = st.navigation(
     {
         "Overview": [home_page, datasets_page],
-        "Analysis by Sample": [metaprogram_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
+        "Analysis by Sample": [metaprogram_page, metaprogram_sample_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
         "Analysis across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
         "Others": [citation_page, contact_page]
     }
