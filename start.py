@@ -67,13 +67,13 @@ datasets_page = st.Page(
 
 metaprogram_page = st.Page(
     page = "views/metaprogram.py",
-    title = "Metaprogram Spatial distribution",
+    title = "Metaprogram spatial distribution",
     icon = ":material/chevron_right:"    
 )
 
 metaprogram_feature_page = st.Page(
     page = "views/metaprogram_feature.py",
-    title = "Metaprogram Features",
+    title = "Metaprogram related features",
     icon = ":material/chevron_right:"    
 )
 
@@ -142,7 +142,7 @@ citation_page = st.Page(
 pg = st.navigation(
     {
         "Overview": [home_page, datasets_page],
-        "Analysis by Sample": [metaprogram_page, metaprogram_feature_page, metaprogram_sample_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
+        "Analysis by Sample": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
         "Analysis across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
         "Others": [citation_page, contact_page]
     }
