@@ -56,14 +56,14 @@ persist("sample_id")
 home_page = st.Page(
     page = "views/home.py",
     title = "Home",
-    icon = ":material/home:",   #":material/chevron_right:"  ,
+    icon = "🏠",   #":material/chevron_right:"  ,
     default= True,
 )
 
 datasets_page = st.Page(
     page = "views/dataset.py",
     title = "Dataset Explorer",
-    icon = ":material/table_chart:"  
+    icon = "📊"  
 )
 
 metaprogram_page = st.Page(
@@ -75,43 +75,43 @@ metaprogram_page = st.Page(
 metaprogram_feature_page = st.Page(
     page = "views/metaprogram_feature.py",
     title = "Metaprogram-Associated Features",
-    icon = ":material/extension:"    
+    icon = "🧩"    
 )
 
 dotplot_page = st.Page(
     page = "views/Metaprogram-specific.py",
     title = "Metaprogram-Centric Comparison",  #Metaprogram
-    icon = ":material/bar_chart:"  
+    icon = "✨"   #🌀
 )
 
 drug2cell_page = st.Page(
     page = "views/drug2cell.py",
     title = "Drug2Cell Score Maps",
-    icon = ":material/medication:"
+    icon = "💊"
 )
 
 heatmap_gene_correlation_page = st.Page(
     page = "views/Ligand–Receptor–TF–Pathway_Correlation.py",
     title = "L-R-TF-Pathway-Drug Correlation Heatmap",  #Correlation heatmaps
-    icon = ":material/loop:"
+    icon = "🪢"
 )
 
 gene_page = st.Page(
     page = "views/spatial_gene.py",
     title = "Gene Expression Maps",
-    icon = ":material/biotech:"
+    icon = "🧬"
 )
 
 s_tf_page = st.Page(
     page = "views/spatial_tf.py",
     title = "TF Activity Maps",
-    icon = ":material/psychology:"
+    icon = "🎯"
 )
 
 s_pathway_page = st.Page(
     page = "views/spatial_pathway.py",
     title = "Pathway Activity Maps",
-    icon = ":material/shuffle:"
+    icon = "🔀"
 )
 
 # ligand_page = st.Page(
@@ -123,7 +123,7 @@ s_pathway_page = st.Page(
 contact_page = st.Page(
     page = "views/contact.py",
     title = "Contact us",
-    icon = ":material/send:"
+    icon = "📨"
 )
 
 citation_page = st.Page(
