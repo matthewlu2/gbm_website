@@ -143,7 +143,7 @@ citation_page = st.Page(
 #     }
 # )
 
-pg = st.navigation(
+pg = st.navigation([
     {"name": "Home", "path": "home", "content": home_page},
     # { "Dataset Explorer": datasets_page},
     {
@@ -153,6 +153,7 @@ pg = st.navigation(
     },
     # { "Citation": citation_page}, 
     # {  "Contact Us": contact_page}
+]
 )
 
 
