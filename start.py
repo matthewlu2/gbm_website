@@ -69,13 +69,13 @@ datasets_page = st.Page(
 metaprogram_page = st.Page(
     page = "views/metaprogram.py",
     title = "Metaprogram Maps",
-    icon = ":material/chevron_right:"    
+    icon = ":material/fiber_manual_record:"    
 )
 
 metaprogram_feature_page = st.Page(
     page = "views/metaprogram_feature.py",
     title = "Metaprogram-Associated Features",
-    icon = ":material/chevron_right:"    
+    icon = ":material/circle:"    
 )
 
 dotplot_page = st.Page(
@@ -87,7 +87,7 @@ dotplot_page = st.Page(
 drug2cell_page = st.Page(
     page = "views/drug2cell.py",
     title = "Drug2Cell Score Maps",
-    icon = ":material/chevron_right:"
+    icon = ":material/circle_fill:"
 )
 
 heatmap_gene_correlation_page = st.Page(
