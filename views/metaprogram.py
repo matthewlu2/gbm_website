@@ -9,7 +9,7 @@ IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/d
 IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_pw_activity'
 IMG_REPO_4 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_drug_score'
 
-st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram Spatial Distribution</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram Maps</h1>", unsafe_allow_html=True)  
 st.write("")
 
 
@@ -22,17 +22,34 @@ option = st.selectbox(
     key = persist("sample_id")
     ) 
 
-b2, c2, d2 = st.columns([.001, .10, .1])
+b1, c1, d1 = st.columns([.001, .10, .1])
 b, c, d = st.columns([.02, .12, .12])
 
-c2.markdown("<h3 style='text-align: center; color: black;'>HE Stain</h1>", unsafe_allow_html=True)
+c1.markdown("<h3 style='text-align: center; color: black;'>H&E Stain</h1>", unsafe_allow_html=True)
 
-d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
-# c.write("")
+ with d1:
+            
+            st.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
+            st.write("")
+            st.write("")    
+
+            sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
+
+            
+            for i in [1:len(sample_items)]:
+                st.markdown(f"**{sample_items[i].index}** : {{sample_items[i].value}", True)
 
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
-d.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
+d.
 
+b2, c2, d2 = st.columns([.001, .10, .1])           
+c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
+d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram</h1>", unsafe_allow_html=True)
+# c.write("")
+
+b3, c3, d3 = st.columns([.02, .12, .12])
+c3.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
+d3.image(f'{IMG_REPO}/metaprogram/{option}.png')
 
 
 # -- Single Metaprogram Images --
@@ -67,15 +84,15 @@ option_mp = st.selectbox(
     l_mp
 )
 
-one1, two1, three1= st.columns([0.001, .20, .18])
-one, two, three= st.columns([0.001, .25, .18])
+# one1, two1, three1= st.columns([0.001, .20, .18])
+# one, two, three= st.columns([0.001, .25, .18])
 
 
-two1.markdown("<h3 style='text-align: center; color: black;'>Metaprograms</h1>", unsafe_allow_html=True)
-three1.markdown("<h3 style='text-align: center; color: black;'>Single Metaprogram</h1>", unsafe_allow_html=True)
+# two1.markdown("<h3 style='text-align: center; color: black;'>Metaprograms</h1>", unsafe_allow_html=True)
+# three1.markdown("<h3 style='text-align: center; color: black;'>Single Metaprogram</h1>", unsafe_allow_html=True)
 
 
-two.image(f'{IMG_REPO}/metaprogram/{option}.png')
-three.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
+# two.image(f'{IMG_REPO}/metaprogram/{option}.png')
+st.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
 
 
