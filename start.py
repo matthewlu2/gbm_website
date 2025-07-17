@@ -136,20 +136,20 @@ citation_page = st.Page(
 
 pg = st.navigation(
     {
-        "Overview": [home_page, datasets_page],
+        "": [home_page, datasets_page],
         "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
         "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
         "Resources": [citation_page, contact_page]
     }
 )
 
-
+pg.run()
 
 # -- SHARED ON ALL PAGES --
 # st.sidebar.text("Made by Osmanbeyoglu Lab")
 
 # -- RUN NAVIGATION --
-pg.run()
+# pg.run()
 st.divider()
 st.markdown(footer,unsafe_allow_html=True) 
 
