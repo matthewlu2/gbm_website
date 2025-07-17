@@ -3,7 +3,7 @@ import pandas as pd
 from persist import update_widget_state
 # from st_aggrid import AgGrid, GridOptionsBuilder
 
-st.markdown("<h2 style='text-align: center; color: black;'>Dataset</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>Dataset Explorer</h1>", unsafe_allow_html=True)  
 st.write("")
 
 st.info("Explore samples by searching for specific entries. For individual samples, you will find clinical information, H&E stained images, metaprogram annotations, spatial mRNA expression, transcription factor (TF) and pathway activity visualizations as well as TF-pathway-ligand-receptor correlation heatmaps. For multiple samples, we offer comparative analysis for TF/pathway metaprogram associations and single gene expression correlations with TF and pathway activity across the samples.")
