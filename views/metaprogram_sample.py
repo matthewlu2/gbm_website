@@ -23,13 +23,6 @@ option = st.selectbox(
     ) 
 
 
-d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
-l_mp = d_mp[option]
-
-option_mp = st.selectbox(
-    'Metaprogram',
-    l_mp
-)
 
 one1, two1, three1= st.columns([0.001, .20, .18])
 one, two, three= st.columns([0.001, .25, .18])
