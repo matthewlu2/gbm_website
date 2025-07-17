@@ -162,14 +162,15 @@ def home():
 def about():
     st.title("About Page")
 
+# This should work perfectly
 pg = st.navigation([
     {"name": "Home", "path": "home", "content": home},
     {
-        "section": "More",
+        "section": "Other",
         "pages": [
             {"name": "About", "path": "about", "content": about},
         ],
-    }
+    },
 ])
 
 
