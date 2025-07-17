@@ -56,7 +56,7 @@ persist("sample_id")
 home_page = st.Page(
     page = "views/home.py",
     title = "Home",
-    icon = ">>", #":material/chevron_right:"  ,
+    icon = ":material/chevron_right:"  ,
     default= True,
 )
 
