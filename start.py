@@ -63,7 +63,7 @@ home_page = st.Page(
 datasets_page = st.Page(
     page = "views/dataset.py",
     title = "Dataset Explorer",
-    icon = ":material/chevron_right:"  
+    icon = ":material/keyboard_double_arrow_right:"  
 )
 
 metaprogram_page = st.Page(
@@ -136,10 +136,10 @@ citation_page = st.Page(
 
 pg = st.navigation(
     {
-        "": [home_page, datasets_page],
+        "Overview": [home_page, datasets_page],
         "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
         "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
-        " ": [citation_page, contact_page]
+        "Others": [citation_page, contact_page]
     }
 )
 
