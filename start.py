@@ -4,7 +4,8 @@ import pandas as pd
 from persist import load_widget_state, persist
 from views.utils import get_sample_dataframe
 from style import define_layout
-
+st.cache_data.clear()
+st.cache_resource.clear()
 # --- PAGE SETUP ----
 
 st.set_page_config(
