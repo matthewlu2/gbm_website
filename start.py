@@ -74,13 +74,13 @@ metaprogram_page = st.Page(
 
 metaprogram_feature_page = st.Page(
     page = "views/metaprogram_feature.py",
-    title = "Metaprogram-associated Features",
+    title = "Metaprogram-Associated Features",
     icon = ":material/chevron_right:"    
 )
 
 dotplot_page = st.Page(
     page = "views/Metaprogram-specific.py",
-    title = "Metaprogram-centric Comparison",  #Metaprogram
+    title = "Metaprogram-Centric Comparison",  #Metaprogram
     icon = ":material/chevron_right:"  
 )
 
@@ -98,7 +98,7 @@ heatmap_gene_correlation_page = st.Page(
 
 gene_page = st.Page(
     page = "views/spatial_gene.py",
-    title = "Gene expression Maps",
+    title = "Gene Expression Maps",
     icon = ":material/chevron_right:"
 )
 
@@ -134,25 +134,25 @@ citation_page = st.Page(
 
 # -- NAVIGATION --
 
-pg = st.navigation(
-    {
-        "Overview": [home_page, datasets_page],
-        "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
-        "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
-        "Others": [citation_page, contact_page]
-    }
-)
-
 # pg = st.navigation(
 #     {
-#         "Home": home_page,
-#         "Dataset Explorer": datasets_page,
+#         "Overview": [home_page, datasets_page],
 #         "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
 #         "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
-#         "Citation": citation_page, 
-#         "Contact Us": contact_page
+#         "Others": [citation_page, contact_page]
 #     }
 # )
+
+pg = st.navigation(
+    {
+        "Home": home_page,
+        "Dataset Explorer": datasets_page,
+        "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
+        "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
+        "Citation": citation_page, 
+        "Contact Us": contact_page
+    }
+)
 
 
 # -- SHARED ON ALL PAGES --
