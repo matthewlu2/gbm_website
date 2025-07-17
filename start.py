@@ -129,7 +129,7 @@ contact_page = st.Page(
 citation_page = st.Page(
     page = "views/citation.py",
     title = "Citation",
-    icon = ":material/menu_book:"
+    icon = "📚"
 )
 
 # -- NAVIGATION --
