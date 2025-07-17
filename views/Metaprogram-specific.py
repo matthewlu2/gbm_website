@@ -13,22 +13,39 @@ st.info("""Compare how regulatory features linked to transcriptional metaprogram
 • **Drug**: Assess predicted drug response signatures tied to different metaprograms, highlighting therapeutic vulnerabilities across the cohort.  
 Use interactive plots and selectors to identify regulatory patterns and drug sensitivities tied to key malignant and non-malignant programs.""")
 
-file = open('text_files/dotplot_tf_names.txt', 'r')
-list = file.read().splitlines()
+# file = open('text_files/dotplot_tf_names.txt', 'r')
+# list = file.read().splitlines()
 
 
-option = st.selectbox(
+# option = st.selectbox(
+#     'Metaprogram',
+#     list) 
+
+# a, b = st.columns([.95, .05])
+# a.markdown("<h3 style='text-align: center; color: black;'>TF</h1>", unsafe_allow_html=True)
+# st.image(f'{IMG_REPO}/{option}.png')
+
+# a1, b1 = st.columns([.95, .05])
+# a1.markdown("<h3 style='text-align: center; color: black;'>Pathway</h1>", unsafe_allow_html=True)
+# st.image(f'{IMG_REPO_2}/{option}.png')
+
+# a2, b2 = st.columns([.95, .05])
+# a2.markdown("<h3 style='text-align: center; color: black;'>Drug Score</h1>", unsafe_allow_html=True)
+# st.image(f'{IMG_REPO_3}/{option}.png')
+
+
+d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
+l_mp = d_mp[option]
+
+option_mp = st.selectbox(
     'Metaprogram',
-    list) 
+    l_mp
+)
+st.markdown("<h3 style='text-align: center; color: black;'>Top TFs across samples</h1>", unsafe_allow_html=True)
+st.image(f'{IMG_REPO}/across_sample_top_transcriptions_per_metaprogram/{option_mp}.png')
 
-a, b = st.columns([.95, .05])
-a.markdown("<h3 style='text-align: center; color: black;'>TF</h1>", unsafe_allow_html=True)
-st.image(f'{IMG_REPO}/{option}.png')
+st.markdown("<h3 style='text-align: center; color: black;'>Top pathways across samples</h1>", unsafe_allow_html=True)
+st.image(f'{IMG_REPO}/across_sample_top_pathways_per_metaprogram/{option_mp}.png')
 
-a1, b1 = st.columns([.95, .05])
-a1.markdown("<h3 style='text-align: center; color: black;'>Pathway</h1>", unsafe_allow_html=True)
-st.image(f'{IMG_REPO_2}/{option}.png')
-
-a2, b2 = st.columns([.95, .05])
-a2.markdown("<h3 style='text-align: center; color: black;'>Drug Score</h1>", unsafe_allow_html=True)
-st.image(f'{IMG_REPO_3}/{option}.png')
+st.markdown("<h3 style='text-align: center; color: black;'>Top drugs across samples</h1>", unsafe_allow_html=True)
+st.image(f'{IMG_REPO}/across_sample_top_drugs_per_metaprogram/{option_mp}.png')
