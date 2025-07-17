@@ -35,5 +35,4 @@ b.image(f'{IMG_REPO2}/{option}/{option2}.png')
 
 IMG_REPO2 = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by Drug2Cell</h1>", unsafe_allow_html=True)
-st.image(f'{IMG_REPO2}/across_metaprogram_top_drugs_per_sample/{option}.png')
-st.write(f'{IMG_REPO2}/across_metaprogram_top_drugs_per_sample/{option}.png')
+st.image(f'{IMG_REPO2}/across_metaprogram_top_drugs_per_sample/{option2}.png')
