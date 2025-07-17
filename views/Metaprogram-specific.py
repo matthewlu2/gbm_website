@@ -1,4 +1,5 @@
 import streamlit as st
+from views.utils import get_sample_metaprograms
 
 IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 # IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_tf_activity'
