@@ -87,7 +87,7 @@ dotplot_page = st.Page(
 drug2cell_page = st.Page(
     page = "views/drug2cell.py",
     title = "Drug2Cell Score Maps",
-    icon = ":material/circle_fill:"
+    icon = ":material/chevron_right:"
 )
 
 heatmap_gene_correlation_page = st.Page(
