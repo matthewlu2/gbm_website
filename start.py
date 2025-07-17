@@ -156,22 +156,23 @@
 
 import streamlit as st
 
-def home():
-    st.title("Home Page")
+def home_page():
+    st.write("Welcome to the Home Page")
 
-def about():
-    st.title("About Page")
+def metaprogram_page():
+    st.write("Metaprogram")
 
-# This should work perfectly
+def gene_page():
+    st.write("Gene Analysis")
+
 pg = st.navigation([
-    {"name": "Home", "path": "home", "content": home},
-    {
-        "section": "Other",
+    {"name": "Home", "path": "home", "content": home_page},  # ✅ Valid top-level page
+
+    {   # ✅ Valid section with multiple pages
+        "section": "Analysis of Individual Samples",
         "pages": [
-            {"name": "About", "path": "about", "content": about},
-        ],
-    },
+            {"name": "Metaprogram", "path": "metaprogram", "content": metaprogram_page},
+            {"name": "Gene", "path": "gene", "content": gene_page},
+        ]
+    }
 ])
-
-
-
