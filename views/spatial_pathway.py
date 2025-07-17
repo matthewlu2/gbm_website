@@ -35,3 +35,6 @@ a.image(f'{IMG_REPO}/spatial_pw_activity/HALLMARK_{option2}/{option}.png')
 b.image(f'{IMG_REPO}/violin_pw_activity/HALLMARK_{option2}/{option}.png')
 
 
+IMG_REPO2 = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
+st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by Pathway</h1>", unsafe_allow_html=True)
+st.image(f'{IMG_REPO2}/across_metaprogram_top_pathways_per_sample/{option}.png')
