@@ -155,7 +155,8 @@
 
 
 import streamlit as st
-
+st.cache_data.clear()
+st.cache_resource.clear()
 def home_page():
     st.write("Welcome to the Home Page")
 
