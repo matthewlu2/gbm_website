@@ -155,6 +155,6 @@
 
 
 import streamlit as st
-st.write("Streamlit version:", streamlit_pkg.__version__)
+st.write("Streamlit version:", st.__version__)
 
 
