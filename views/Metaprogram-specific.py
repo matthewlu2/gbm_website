@@ -1,8 +1,9 @@
 import streamlit as st
 
-IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_tf_activity'
-IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_pw_activity'
-IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_drug_score'
+IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
+# IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_tf_activity'
+# IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_pw_activity'
+# IMG_REPO_3 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/dotplot_drug_score'
 
 st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram-specific</h1>", unsafe_allow_html=True)  
 st.write("")
