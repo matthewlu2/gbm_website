@@ -150,7 +150,7 @@ pg = st.navigation(
         "Analysis of Individual Samples": [metaprogram_page, metaprogram_feature_page, gene_page, s_tf_page, s_pathway_page , drug2cell_page],  # ligand_page,
         "Comparison Across Samples": [dotplot_page,  heatmap_gene_correlation_page], 
        
-    }
+    },
     { "Citation": citation_page}, 
     {  "Contact Us": contact_page}
 )
