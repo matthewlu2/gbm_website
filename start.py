@@ -63,7 +63,7 @@ home_page = st.Page(
 datasets_page = st.Page(
     page = "views/dataset.py",
     title = "Dataset Explorer",
-    icon = "📊"  
+    icon = "🗂️"  
 )
 
 metaprogram_page = st.Page(
@@ -81,7 +81,7 @@ metaprogram_feature_page = st.Page(
 dotplot_page = st.Page(
     page = "views/Metaprogram-specific.py",
     title = "Metaprogram-Centric Comparison",  #Metaprogram
-    icon = "✨"   #🌀
+    icon = "📊"   #🌀
 )
 
 drug2cell_page = st.Page(
