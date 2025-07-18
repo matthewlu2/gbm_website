@@ -21,11 +21,8 @@ st.markdown(
     <style>
   
 
-    /* Alternative if the above still doesn't work,
-       it might be that the label text is directly in the data-testid div,
-       or in a span, or another element.
-    */
-    div[data-testid="stWidgetLabel"] {
+  /* If the label text itself is directly inside a span within that div */
+    div[data-testid="stWidgetLabel"] span {
         font-size: 20px !important;
         font-weight: bold !important;
         color: #FF4B4B !important;
