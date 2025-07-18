@@ -37,14 +37,14 @@ c1,_, d1 = st.columns([ 0.47, 0.1, 0.5])
 
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
-d1.write("")
+
 d1.write("")
 d1.markdown( f'<p style="font-family:sans-serif; color:black; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
 _, c,_, d = st.columns([.007, .07, 0.04,.1])
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
 
-d.write("")
+
 d.write("")
 d.write("")
 
