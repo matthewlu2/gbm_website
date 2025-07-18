@@ -55,12 +55,12 @@ for index, value in sample_items.items():
 
 
 
-c2,d2 = st.columns([ 0.5, 0.5])         
+c2,d2 = st.columns([ 0.47, 0.5])         
 c2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram Proportion</h4>", unsafe_allow_html=True)
 d2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram</h4>", unsafe_allow_html=True)
 
 
-b3, c3, d3 = st.columns([.002, .12, .12])
+c3, d3 = st.columns([.12, .12])
 c3.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
 d3.write("")
 d3.write("")
