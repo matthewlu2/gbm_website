@@ -21,15 +21,15 @@ option = st.selectbox(
 
 
 
-st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by TF</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>TF Activity across MetaprogramsF</h1>", unsafe_allow_html=True)
 st.image(f'{IMG_REPO}/across_metaprogram_top_transcriptions_per_sample/{option}.png')
 
-st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by Pathway</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>Pathway Activity across Metaprograms</h1>", unsafe_allow_html=True)
 
 i, j = st.columns([.11, .95])
 j.image(f'{IMG_REPO}/across_metaprogram_top_pathways_per_sample/{option}.png')
 
-st.markdown("<h3 style='text-align: center; color: black;'>Metaprogram by Drug2Cell</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>Drug2Cell Scores across Metaprogram</h1>", unsafe_allow_html=True)
 st.image(f'{IMG_REPO}/across_metaprogram_top_drugs_per_sample/{option}.png')
 
 
