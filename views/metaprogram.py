@@ -36,7 +36,7 @@ d1.write("")
 # sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
 st.write(df_sample.shape)
 st.write(df_sample.columns)
-st.wirte(type(df_sample))
+st.write(df_sample.iloc[:,1])
             
 # for i in [1:len(sample_items)]:
 #     d1.markdown(f"**{sample_items[i].index}** : {{sample_items[i].value}", True)
