@@ -11,7 +11,7 @@ st.write("")
 
 b, c = st.columns([ .7, .0001])
 st.markdown('##### If you have any questions or feedback, please feel free to contact us:')
-a2, b2, _ = st.columns([ .25, .25, .1])
+a2, b2, _ = st.columns([ .25, .25, .2])
 a2.markdown("""<span style="font-size:18px;">Hatice Osmanbeyoglu<br>Principal Investigator<br>✉️ osmanbeyogluhu@pitt.edu</span>""", unsafe_allow_html=True)
 a2.markdown("""<span style="font-size:18px;">Linan Zhang<br>Assistant Professor<br>✉️ liz133@pitt.edu</span>""", unsafe_allow_html=True)
 b2.markdown("""<span style="font-size:18px;">Matthew Lu<br>Undergraduate Researcher<br>✉️ mal554@pitt.edu</span>""", unsafe_allow_html=True)
