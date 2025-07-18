@@ -6,7 +6,7 @@ from persist import persist
 IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 
 
-st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram Related Molecular Features</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>Metaprogram-Associated Features</h1>", unsafe_allow_html=True)  
 st.write("")
 
 st.info("Use the interactive map to select and explore metaprogram related molecular features such as transcription factor and pathway activities, as well as predicted drug sensitivities across each sample.")
