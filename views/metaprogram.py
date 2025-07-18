@@ -40,7 +40,7 @@ c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsa
 d1.write("")
 d1.write("")
 d1.markdown( f'<p style="font-family:sans-serif; color:black; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
-b, c, d = st.columns([.003, .1, .1])
+b, c, d = st.columns([.003, .08, .13])
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
 
