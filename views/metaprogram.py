@@ -42,10 +42,10 @@ c1.markdown("<h3 style='text-align: center; color: black;'>H&E Stain</h1>", unsa
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
 
-# b2, c2, d2 = st.columns([.001, .10, .1])           
-# c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
-# d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram</h1>", unsafe_allow_html=True)
-# # c.write("")
+b2, c2, d2 = st.columns([.001, .10, .1])           
+c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
+d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram</h1>", unsafe_allow_html=True)
+# c.write("")
 
 # b3, c3, d3 = st.columns([.02, .12, .12])
 # c3.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
