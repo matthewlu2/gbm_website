@@ -32,8 +32,9 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 option = st.selectbox(
-    label='',
+    label='Sample',
     options=sample_list,
     key = persist("sample_id")
     ) 
