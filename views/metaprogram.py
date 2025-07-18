@@ -29,12 +29,12 @@ c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsa
 d1.write("")
 d1.write("")
 d1.markdown( f'<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
-b, c, d = st.columns([.003, .12, .12])
+b, c, d = st.columns([.003, .12, .1])
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
 
-
-
+d.write("")
+d.write("")
 
 sample_items = df_sample[df_sample['Sample-ID']== option].iloc[0]
 
