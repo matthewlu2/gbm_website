@@ -22,77 +22,53 @@ option = st.selectbox(
     key = persist("sample_id")
     ) 
 
-b1, c1, d1 = st.columns([.001, .10, .1])
-b, c, d = st.columns([.02, .12, .12])
+# b1, c1, d1 = st.columns([.001, .10, .1])
+# b, c, d = st.columns([.02, .12, .12])
 
-c1.markdown("<h3 style='text-align: center; color: black;'>H&E Stain</h1>", unsafe_allow_html=True)
+# c1.markdown("<h3 style='text-align: center; color: black;'>H&E Stain</h1>", unsafe_allow_html=True)
 
- with d1:
+#  with d1:
             
-            st.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
-            st.write("")
-            st.write("")    
+#             st.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
+#             st.write("")
+#             st.write("")    
 
-            sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
+#             sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
 
             
-            for i in [1:len(sample_items)]:
-                st.markdown(f"**{sample_items[i].index}** : {{sample_items[i].value}", True)
+#             for i in [1:len(sample_items)]:
+#                 st.markdown(f"**{sample_items[i].index}** : {{sample_items[i].value}", True)
 
-c.image(f'{IMG_REPO}/he_stain/{option}.png')
-d.
+# c.image(f'{IMG_REPO}/he_stain/{option}.png')
+# d.
 
-b2, c2, d2 = st.columns([.001, .10, .1])           
-c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
-d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram</h1>", unsafe_allow_html=True)
-# c.write("")
+# b2, c2, d2 = st.columns([.001, .10, .1])           
+# c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
+# d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram</h1>", unsafe_allow_html=True)
+# # c.write("")
 
-b3, c3, d3 = st.columns([.02, .12, .12])
-c3.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
-d3.image(f'{IMG_REPO}/metaprogram/{option}.png')
-
-
-# -- Single Metaprogram Images --
-
-# def url_is_alive(url):
-#     """
-#     Checks that a given URL is reachable.
-#     :param url: A URL
-#     :rtype: bool
-#     """
-#     request = urllib.request.Request(url)
-#     request.get_method = lambda: 'HEAD'
-#     try:
-#         urllib.request.urlopen(request)
-#         return True
-#     except urllib.request.HTTPError:
-#         return False
-    
-# metaprograms = ['AC','Chromatin.Reg','Inflammatory.Mac','MES.Ast','MES.Hyp','MES','Mac','NPC','Neuron','OPC','Oligo','Prolif.Metab','Reactive.Ast','Vasc']
-# l_mp = []
-# for mp in metaprograms:
-#     urlpath = f"https://github.com/matthewlu2/gbm_data/blob/main/metaprogram_tab/metaprogram_{mp}/{option}.png"
-#     if url_is_alive(urlpath):
-#         # l_mp.append(f'{IMG_REPO}/metaprogram_{mp}/{option}.png')
-#         l_mp.append(mp)
-
-d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
-l_mp = d_mp[option]
-
-option_mp = st.selectbox(
-    'Metaprogram',
-    l_mp
-)
-
-# one1, two1, three1= st.columns([0.001, .20, .18])
-# one, two, three= st.columns([0.001, .25, .18])
+# b3, c3, d3 = st.columns([.02, .12, .12])
+# c3.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
+# d3.image(f'{IMG_REPO}/metaprogram/{option}.png')
 
 
-# two1.markdown("<h3 style='text-align: center; color: black;'>Metaprograms</h1>", unsafe_allow_html=True)
-# three1.markdown("<h3 style='text-align: center; color: black;'>Single Metaprogram</h1>", unsafe_allow_html=True)
+# d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
+# l_mp = d_mp[option]
+
+# option_mp = st.selectbox(
+#     'Metaprogram',
+#     l_mp
+# )
+
+# # one1, two1, three1= st.columns([0.001, .20, .18])
+# # one, two, three= st.columns([0.001, .25, .18])
 
 
-# two.image(f'{IMG_REPO}/metaprogram/{option}.png')
-st.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
+# # two1.markdown("<h3 style='text-align: center; color: black;'>Metaprograms</h1>", unsafe_allow_html=True)
+# # three1.markdown("<h3 style='text-align: center; color: black;'>Single Metaprogram</h1>", unsafe_allow_html=True)
+
+
+# # two.image(f'{IMG_REPO}/metaprogram/{option}.png')
+# st.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
 
 
