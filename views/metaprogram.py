@@ -27,13 +27,13 @@ b, c, d = st.columns([.002, .12, .12])
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
 
- with d1:
-            
-            # st.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
-            st.write("")
-            st.write("")    
 
-            # sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
+            
+# st.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
+d1.write("")
+d1.write("")    
+
+# sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
 
             
 #             for i in [1:len(sample_items)]:
