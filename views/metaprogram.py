@@ -22,7 +22,7 @@ option = st.selectbox(
     key = persist("sample_id")
     ) 
 
-b1, c1, d1 = st.columns([.001, .05, .1])
+b1, c1, d1 = st.columns([.001, .07, .1])
 b, c, d = st.columns([.002, .12, .12])
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
@@ -42,7 +42,7 @@ c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsa
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
 
-b2, c2, d2 = st.columns([.0001, .10, .1])           
+b2, c2, d2 = st.columns([.0001, .08, .1])           
 c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h2>", unsafe_allow_html=True)
 d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram</h2>", unsafe_allow_html=True)
 # c.write("")
