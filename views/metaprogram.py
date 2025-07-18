@@ -22,7 +22,7 @@ option = st.selectbox(
     key = persist("sample_id")
     ) 
 
-c1, d1 = st.columns([ .05, .2])
+c1, d1 = st.columns([ 0.3, 0.6])
 
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
