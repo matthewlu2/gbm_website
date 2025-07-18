@@ -55,7 +55,7 @@ for index, value in sample_items.items():
 
 
 
-b2, c2, d2 = st.columns([.00001, .08, .08])           
+c2,_, d2 = st.columns([ 0.47, 0.1, 0.5])         
 c2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram Proportion</h4>", unsafe_allow_html=True)
 d2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram</h4>", unsafe_allow_html=True)
 
