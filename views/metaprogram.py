@@ -22,7 +22,7 @@ tabs_font_css = """
 div[class*="stSelectbox"] label
  {
   font-size: 36px !important;  #not working, st use the body font size syle override it
-  color: purple;
+  color: red;
 }
 </style>
 """
