@@ -47,9 +47,11 @@ c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportio
 d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram</h2>", unsafe_allow_html=True)
 # c.write("")
 
-b3, c3, d3 = st.columns([.02, .12, .12])
-c3.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
-d3.image(f'{IMG_REPO}/metaprogram/{option}.png')
+b3, c3, d3 = st.columns([.002, .12, .12])
+c2.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
+d2.write("")
+d2.write("")
+d2.image(f'{IMG_REPO}/metaprogram/{option}.png')
 
 
 # d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
