@@ -20,7 +20,7 @@ st.markdown(
     """
     <style>
     /* Target the label container for st.selectbox */
-    div[data-testid="stMarkdownContainer"] > div {
+    div[data-testid="stWidgetLabel"] > div {
         font-size: 20px; /* Adjust this value as needed */
         font-weight: bold; /* Make it bold for emphasis if desired */
         color: #FF4B4B; /* Change color if desired */
