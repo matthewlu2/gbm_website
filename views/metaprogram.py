@@ -29,7 +29,7 @@ c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsa
 
 
             
-# st.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
+d1.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
 d1.write("")
 d1.write("")    
 
