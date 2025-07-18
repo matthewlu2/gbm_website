@@ -26,6 +26,7 @@ b1, c1, d1 = st.columns([.001, .08, .1])
 
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
+c1.markdown("<h4 style='text-align: center; color: black;'> </h4>", unsafe_allow_html=True)
 b, c, d = st.columns([.003, .12, .12])
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
