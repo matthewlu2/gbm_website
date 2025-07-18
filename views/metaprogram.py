@@ -33,7 +33,7 @@ c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsa
             st.write("")
             st.write("")    
 
-            sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
+            # sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
 
             
 #             for i in [1:len(sample_items)]:
