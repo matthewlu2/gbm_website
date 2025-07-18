@@ -55,7 +55,7 @@ for index, value in sample_items.items():
 
 
 
-b2, c2, d2 = st.columns([.0001, .08, .1])           
+b2, c2, d2 = st.columns([.00001, .08, .08])           
 c2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram Proportion</h4>", unsafe_allow_html=True)
 d2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram</h4>", unsafe_allow_html=True)
 
@@ -78,15 +78,7 @@ option_mp = st.selectbox(
     l_mp
 )
 
-# one1, two1, three1= st.columns([0.001, .20, .18])
-# one, two, three= st.columns([0.001, .25, .18])
 
-
-# two1.markdown("<h3 style='text-align: center; color: black;'>Metaprograms</h1>", unsafe_allow_html=True)
-# three1.markdown("<h3 style='text-align: center; color: black;'>Single Metaprogram</h1>", unsafe_allow_html=True)
-
-
-# two.image(f'{IMG_REPO}/metaprogram/{option}.png')
 b4, c4 = st.columns([0.2, 0.6])
 c4.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
 
