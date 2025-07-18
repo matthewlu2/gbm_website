@@ -74,6 +74,7 @@ option_mp = st.selectbox(
 
 
 # two.image(f'{IMG_REPO}/metaprogram/{option}.png')
-st.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
+b4, c4 = st.columns([0.2, 0.6])
+c4.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
 
 
