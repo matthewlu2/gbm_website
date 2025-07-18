@@ -20,8 +20,8 @@ sample_list = df_sample['Sample-ID'].values.tolist()
 tabs_font_css = """
 <style>
 div[class*="stSelectbox"] label {
-  font-size: 26px;
-  color: red;
+  font-size: 36px;
+  color: blue;
 }
 </style>
 """
