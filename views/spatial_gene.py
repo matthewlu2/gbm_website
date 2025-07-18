@@ -15,11 +15,16 @@ st.info("Explore the spatial patterns of individual gene expression within gliob
 file = open('text_files/spatial_gene_names_10.txt', 'r')
 list = file.read().splitlines()
 
-
+tabs_font_css = """
+<style>
+div[class*="stSelectbox"] label {
+  color: purple;
+}
+</style>
+"""
+st.write(tabs_font_css, unsafe_allow_html=True)
 
 a, b = st.columns(2)
-
-
 df_sample = st.session_state.df_sample
 sample_list = df_sample['Sample-ID'].values.tolist()
 option = a.selectbox(
