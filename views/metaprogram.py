@@ -33,7 +33,7 @@ d1.markdown( f'<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;
 d1.write("")
 d1.write("")    
 
-sample_items = df_sample.loc[df_sample['Sample-ID']== option, :]
+sample_items = df_sample.loc[df_sample['Sample-ID']== option, :][0]
 st.write( len(sample_items))
 st.write(sample_items)
 st.write(sample_items.index)
