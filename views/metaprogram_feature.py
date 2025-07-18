@@ -11,6 +11,15 @@ st.write("")
 
 st.info("Use the interactive map to select and explore metaprogram related molecular features such as transcription factor and pathway activities, as well as predicted drug sensitivities across each sample.")
 
+tabs_font_css = """
+<style>
+div[class*="stSelectbox"] label {
+  color: purple;
+}
+</style>
+"""
+st.write(tabs_font_css, unsafe_allow_html=True)
+
 df_sample = st.session_state.df_sample
 sample_list = df_sample['Sample-ID'].values.tolist()
 option = st.selectbox(
