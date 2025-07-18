@@ -51,6 +51,8 @@ b3, c3, d3 = st.columns([.002, .12, .12])
 c2.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
 d2.write("")
 d2.write("")
+d2.write("")
+d2.write("")
 d2.image(f'{IMG_REPO}/metaprogram/{option}.png')
 
 
