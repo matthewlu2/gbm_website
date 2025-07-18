@@ -22,7 +22,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-df_sample = df_sample.apply(lambda col: col.astype(int) if pd.api.types.is_float_dtype(col) and (col.dropna() % 1 == 0).all() else col)
+# df_sample = df_sample.apply(lambda col: col.astype(int) if pd.api.types.is_float_dtype(col) and (col.dropna() % 1 == 0).all() else col)
 
 b.table(df_sample)        
 
