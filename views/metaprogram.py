@@ -27,13 +27,13 @@ b, c, d = st.columns([.002, .12, .12])
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
 
-#  with d1:
+ with d1:
             
-#             st.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
-#             st.write("")
-#             st.write("")    
+            st.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
+            st.write("")
+            st.write("")    
 
-#             sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
+            sample_items = df_sample.loc[df_sample['Sample-ID'== option, :]
 
             
 #             for i in [1:len(sample_items)]:
@@ -43,8 +43,8 @@ c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
 
 b2, c2, d2 = st.columns([.0001, .08, .1])           
-c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h2>", unsafe_allow_html=True)
-d2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram</h2>", unsafe_allow_html=True)
+c2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram Proportion</h4>", unsafe_allow_html=True)
+d2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram</h4>", unsafe_allow_html=True)
 # c.write("")
 
 b3, c3, d3 = st.columns([.002, .12, .12])
