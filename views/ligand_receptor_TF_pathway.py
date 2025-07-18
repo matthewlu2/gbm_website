@@ -3,7 +3,7 @@ from streamlit_pdf_viewer import pdf_viewer
 from persist import persist
 
 
-st.markdown("<h2 style='text-align: center; color: black;'>Ligand-Receptor-TF-Pathway heatmaps</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>L-R-TF-Pathway-Drug Correlation Heatmap</h1>", unsafe_allow_html=True)  
 st.write("")
 
 sample_list = ['MGH258', 'UKF243', 'UKF248', 'UKF251', 'UKF255', 'UKF259', 'UKF260',
