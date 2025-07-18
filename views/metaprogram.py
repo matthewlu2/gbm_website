@@ -22,10 +22,10 @@ option = st.selectbox(
     key = persist("sample_id")
     ) 
 
-# b1, c1, d1 = st.columns([.001, .10, .1])
-# b, c, d = st.columns([.02, .12, .12])
+b1, c1, d1 = st.columns([.001, .10, .1])
+b, c, d = st.columns([.02, .12, .12])
 
-# c1.markdown("<h3 style='text-align: center; color: black;'>H&E Stain</h1>", unsafe_allow_html=True)
+c1.markdown("<h3 style='text-align: center; color: black;'>H&E Stain</h1>", unsafe_allow_html=True)
 
 #  with d1:
             
@@ -39,8 +39,8 @@ option = st.selectbox(
 #             for i in [1:len(sample_items)]:
 #                 st.markdown(f"**{sample_items[i].index}** : {{sample_items[i].value}", True)
 
-# c.image(f'{IMG_REPO}/he_stain/{option}.png')
-# d.
+c.image(f'{IMG_REPO}/he_stain/{option}.png')
+
 
 # b2, c2, d2 = st.columns([.001, .10, .1])           
 # c2.markdown("<h3 style='text-align: center; color: black;'>Metaprogram Proportion</h1>", unsafe_allow_html=True)
