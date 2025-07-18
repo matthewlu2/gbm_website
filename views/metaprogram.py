@@ -28,10 +28,10 @@ b, c, d = st.columns([.003, .12, .12])
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
-d1.write("")
-d1.write("")
-d1.markdown( f'<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
-d1.write("")
+d.write("")
+d.write("")
+d.markdown( f'<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
+d.write("")
 
 
 sample_items = df_sample[df_sample['Sample-ID']== option].iloc[0]
@@ -45,7 +45,7 @@ for index, value in sample_items.items():
 b2, c2, d2 = st.columns([.0001, .08, .1])           
 c2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram Proportion</h4>", unsafe_allow_html=True)
 d2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram</h4>", unsafe_allow_html=True)
-# c.write("")
+
 
 b3, c3, d3 = st.columns([.002, .12, .12])
 c3.image(f'{IMG_REPO}/pie_metaprogram/{option}.png')
