@@ -17,6 +17,15 @@ list = file.read().splitlines()
 
 a, b = st.columns(2)
 
+tabs_font_css = """
+<style>
+div[class*="stSelectbox"] label {
+  color: purple;
+}
+</style>
+"""
+st.write(tabs_font_css, unsafe_allow_html=True)
+
 option = b.selectbox(
     'drug2cell',
     list)
