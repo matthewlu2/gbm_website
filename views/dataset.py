@@ -22,7 +22,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# df_sample = df_sample.apply(lambda col: col.astype(int) if pd.api.types.is_float_dtype(col) and (col.dropna() % 1 == 0).all() else col)
+df_sample['Grade'] = df_sample['Grade'].astype('Int64')
 
 b.table(df_sample)        
 
