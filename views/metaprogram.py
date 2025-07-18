@@ -16,10 +16,31 @@ st.write("")
 st.info("Visualize the spatial distribution of 14 transcriptional metaprograms within glioblastoma tissue samples. These metaprograms capture key malignant subtypes—such as mesenchymal, neural progenitor-like, and proliferative states—as well as important non-malignant populations, including immune, vascular, and glial cells. Use the interactive map to select and explore metaprograms, viewing their spatial localization alongside histology images.")
 df_sample = st.session_state.df_sample
 sample_list = df_sample['Sample-ID'].values.tolist()
-st.markdown("<p style='font-size:20px; font-weight:bold; color:#1a1a1a;'>Sample:</p>", unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    /* Target the label container for st.selectbox */
+    div[data-testid="stWidgetLabel"] > div {
+        font-size: 20px; /* Adjust this value as needed */
+        font-weight: bold; /* Make it bold for emphasis if desired */
+        color: #FF4B4B; /* Change color if desired */
+    }
+
+    /* If the above is too broad and affects other labels,
+       you might need to target more specifically if there's a unique parent for selectbox.
+       For instance, if you only want to affect a specific selectbox:
+       #my_unique_selectbox_container_id label {
+           font-size: 20px;
+       }
+       However, Streamlit widget IDs are usually dynamic, so targeting by data-testid is better.
+    */
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 option = st.selectbox(
-    label='',
+    label='Sample',
     options=sample_list,
     key = persist("sample_id")
     ) 
