@@ -33,7 +33,7 @@ option = st.selectbox(
     key = persist("sample_id")
     ) 
 
-c1,d1 = st.columns([ 0.47, 0.5])
+c1,_,d1 = st.columns([ 0.47, 0.1, 0.5])
 
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
@@ -55,7 +55,7 @@ for index, value in sample_items.items():
 
 
 
-c2,_, d2 = st.columns([ 0.5, 0.001, 0.5])         
+c2,d2 = st.columns([ 0.5, 0.5])         
 c2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram Proportion</h4>", unsafe_allow_html=True)
 d2.markdown("<h4 style='text-align: center; color: black;'>Metaprogram</h4>", unsafe_allow_html=True)
 
