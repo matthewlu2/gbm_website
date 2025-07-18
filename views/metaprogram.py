@@ -27,7 +27,7 @@ b, c, d = st.columns([.002, .12, .12])
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
 
-
+st.write(option)
             
 d1.markdown( '<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
 d1.write("")
