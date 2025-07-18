@@ -34,10 +34,10 @@ d1.write("")
 d1.write("")    
 
 sample_items = df_sample[df_sample['Sample-ID']== option].iloc[0]
-
-for index, value in sample_items.items()
-    d1.write(index)
-    # d1.markdown(f"**{index}** : {value}", True)
+st.write(sample_items)
+# for index, value in sample_items.items()
+#     d1.write(index)
+#     # d1.markdown(f"**{index}** : {value}", True)
 
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
