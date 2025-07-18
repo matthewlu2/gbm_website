@@ -19,9 +19,10 @@ sample_list = df_sample['Sample-ID'].values.tolist()
 
 tabs_font_css = """
 <style>
-.st-emotion-cache-1r4qj8v {
-  font-size: 36px !important;
-  color: blue;
+div[class*="stSelectbox"] label
+ {
+  font-size: 36px !important;  #not working, st use the body font size syle override it
+  color: darkblue;
 }
 </style>
 """
