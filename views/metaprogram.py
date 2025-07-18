@@ -22,10 +22,11 @@ option = st.selectbox(
     key = persist("sample_id")
     ) 
 
-c1,_, d1 = st.columns([ 0.5, 0.06, 0.57])
+c1,_, d1 = st.columns([ 0.5, 0.06, 0.55])
 
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
+d1.write("")
 d1.markdown( f'<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
 b, c, d = st.columns([.003, .12, .12])
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
