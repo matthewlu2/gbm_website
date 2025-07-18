@@ -19,15 +19,19 @@ sample_list = df_sample['Sample-ID'].values.tolist()
 st.markdown(
     """
     <style>
-    /* Target the label container for all widgets */
-    /* Add !important to override Streamlit's default styles */
-    div[data-testid="stWidgetLabel"] > div {
-        font-size: 20px !important; /* Make sure this takes precedence */
-        font-weight: bold !important; /* Make sure this takes precedence */
-        color: #FF4B4B !important; /* Make sure this takes precedence */
+  
+
+    /* Alternative if the above still doesn't work,
+       it might be that the label text is directly in the data-testid div,
+       or in a span, or another element.
+    */
+    div[data-testid="stWidgetLabel"] {
+        font-size: 20px !important;
+        font-weight: bold !important;
+        color: #FF4B4B !important;
     }
 
-   
+  
     </style>
     """,
     unsafe_allow_html=True
