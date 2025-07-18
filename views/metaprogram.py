@@ -17,17 +17,17 @@ st.info("Visualize the spatial distribution of 14 transcriptional metaprograms w
 df_sample = st.session_state.df_sample
 sample_list = df_sample['Sample-ID'].values.tolist()
 
-st.markdown(
-    """
-    <style>
-    /* Targeting the dropdown options */
-    div[role="listbox"] ul li { 
-        font-size: 20px; /* Adjust the font size as needed */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+tabs_font_css = """
+<style>
+div[class*="stSelectbox"] label {
+  font-size: 26px;
+  color: red;
+}
+</style>
+"""
+
+st.write(tabs_font_css, unsafe_allow_html=True)
+
 option = st.selectbox(
     label='Sample',
     options=sample_list,
