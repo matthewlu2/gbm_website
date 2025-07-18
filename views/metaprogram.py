@@ -26,19 +26,19 @@ b1, c1, d1 = st.columns([.001, .07, .1])
 b, c, d = st.columns([.002, .12, .12])
 
 c1.markdown("<h4 style='text-align: center; color: black;'>H&E Stain</h4>", unsafe_allow_html=True)
-
+c1.image(f'{IMG_REPO}/he_stain/{option}.png')
 
             
 d1.markdown( f'<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;  font-weight: bold">Sample {option}</p>',  unsafe_allow_html=True) 
 d1.write("")
-d1.write("")    
+
 
 sample_items = df_sample[df_sample['Sample-ID']== option].iloc[0]
 
 for index, value in sample_items.items():
     d1.markdown(f"**{index}** : {value}", True)
 
-c.image(f'{IMG_REPO}/he_stain/{option}.png')
+
 
 
 b2, c2, d2 = st.columns([.0001, .08, .1])           
