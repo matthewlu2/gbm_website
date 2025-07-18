@@ -33,12 +33,10 @@ d1.markdown( f'<p style="font-family:sans-serif; color:#002e8c; font-size: 22px;
 d1.write("")
 d1.write("")    
 
-sample_items = df_sample.loc[df_sample['Sample-ID']== option]
-st.write( len(sample_items))
-st.write(sample_items)
-st.write(sample_items.index)
-# for i in [1:len(sample_items)]:
-#     d1.markdown(f"**{sample_items[i].index}** : {{sample_items[i].value}", True)
+sample_items = df_sample.loc[df_sample['Sample-ID']== option].iloc[0]
+
+for index, value in sample_items.items()
+    d1.markdown(f"**{index}** : {value}", True)
 
 c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
