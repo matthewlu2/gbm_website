@@ -16,8 +16,9 @@ st.write("")
 st.info("Visualize the spatial distribution of 14 transcriptional metaprograms within glioblastoma tissue samples. These metaprograms capture key malignant subtypes—such as mesenchymal, neural progenitor-like, and proliferative states—as well as important non-malignant populations, including immune, vascular, and glial cells. Use the interactive map to select and explore metaprograms, viewing their spatial localization alongside histology images.")
 df_sample = st.session_state.df_sample
 sample_list = df_sample['Sample-ID'].values.tolist()
+st.markdown("<span style='font-size:20px; font-weight:bold;'>Sample:</span>", unsafe_allow_html=True)
 option = st.selectbox(
-    label='Sample',
+    label='',
     options=sample_list,
     key = persist("sample_id")
     ) 
