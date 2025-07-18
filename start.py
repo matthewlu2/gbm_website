@@ -53,7 +53,7 @@ df_sample = get_sample_dataframe('./data/dataset.csv')
 st.session_state['df_sample'] = df_sample
 persist("sample_id")
 
-emoji = "🔹" #"🔸" # #"💠"
+emoji = "💠" #"🔹" #"🔸" # #
 
 # home_page = st.Page(
 #     page = "views/home.py",
