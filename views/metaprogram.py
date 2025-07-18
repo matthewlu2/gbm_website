@@ -46,7 +46,6 @@ c.image(f'{IMG_REPO}/he_stain/{option}.png')
 
 
 d.write("")
-d.write("")
 
 sample_items = df_sample[df_sample['Sample-ID']== option].iloc[0]
 
