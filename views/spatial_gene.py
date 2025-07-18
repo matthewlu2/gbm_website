@@ -7,7 +7,7 @@ IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/plot_spatial/main'
 IMG_REPO_2 = 'https://raw.githubusercontent.com/matthewlu2/plot_violin/main'
 
 
-st.markdown("<h2 style='text-align: center; color: black;'>Spatial Gene Expression</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>Gene Expression Maps</h1>", unsafe_allow_html=True)  
 st.write("")
 
 st.info("Explore the spatial patterns of individual gene expression within glioblastoma tissue sections. Visualize how any gene of interest is localized across the tumor microenvironment, highlighting expression in malignant cells, immune populations, or stromal regions. Use the search box to enter gene symbols and the sample selector to navigate different patient tumors.")
