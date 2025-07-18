@@ -4,7 +4,7 @@ from streamlit_pdf_viewer import pdf_viewer
 
 IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 
-st.markdown("<h2 style='text-align: center; color: black;'>Ligand–Receptor–TF–Pathway Correlation</h1>", unsafe_allow_html=True)  
+st.markdown("<h2 style='text-align: center; color: black;'>L-R-TF-Pathway-Drug Correlation Heatmap</h1>", unsafe_allow_html=True)  
 st.write("")
 
 st.info("Explore spatial correlations between ligand expression, receptor expression, transcription factor activities, and pathway activities across glioblastoma samples. This helps reveal intercellular signaling and regulatory interactions shaping the tumor microenvironment. Interactive clustered heatmaps display Pearson correlation coefficients, allowing you to identify ligand–receptor–TF–pathway relationships that are conserved or variable across tumors. Use the search and filter options to select genes, TFs, pathways, or drugs, and explore their spatial correlations across different patients.")
