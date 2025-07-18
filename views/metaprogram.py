@@ -54,27 +54,26 @@ d3.write("")
 d3.write("")
 d3.write("")
 d3.write("")
-d3.write("")
 d3.image(f'{IMG_REPO}/metaprogram/{option}.png')
 
 
-# d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
-# l_mp = d_mp[option]
+d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
+l_mp = d_mp[option]
 
-# option_mp = st.selectbox(
-#     'Metaprogram',
-#     l_mp
-# )
+option_mp = st.selectbox(
+    'Metaprogram',
+    l_mp
+)
 
-# # one1, two1, three1= st.columns([0.001, .20, .18])
-# # one, two, three= st.columns([0.001, .25, .18])
-
-
-# # two1.markdown("<h3 style='text-align: center; color: black;'>Metaprograms</h1>", unsafe_allow_html=True)
-# # three1.markdown("<h3 style='text-align: center; color: black;'>Single Metaprogram</h1>", unsafe_allow_html=True)
+# one1, two1, three1= st.columns([0.001, .20, .18])
+# one, two, three= st.columns([0.001, .25, .18])
 
 
-# # two.image(f'{IMG_REPO}/metaprogram/{option}.png')
-# st.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
+# two1.markdown("<h3 style='text-align: center; color: black;'>Metaprograms</h1>", unsafe_allow_html=True)
+# three1.markdown("<h3 style='text-align: center; color: black;'>Single Metaprogram</h1>", unsafe_allow_html=True)
+
+
+# two.image(f'{IMG_REPO}/metaprogram/{option}.png')
+st.image(f'{IMG_REPO}/metaprogram_{option_mp}/{option}.png')
 
 
