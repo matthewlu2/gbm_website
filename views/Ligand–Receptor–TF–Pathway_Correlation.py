@@ -14,6 +14,16 @@ st.info("Explore spatial correlations between ligand expression, receptor expres
 option = "gene"
 file = open('text_files/correlation_per_gene_names.txt', 'r')
 list = file.read().splitlines()
+
+tabs_font_css = """
+<style>
+div[class*="stSelectbox"] label {
+  color: purple;
+}
+</style>
+"""
+st.write(tabs_font_css, unsafe_allow_html=True)
+
 option_gene = st.selectbox(
     'Gene',
     list) 
