@@ -21,7 +21,7 @@ option = st.selectbox(
 
 
 
-st.markdown("<h3 style='text-align: center; color: black;'>TF Activity across MetaprogramsF</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>TF Activity across Metaprograms</h1>", unsafe_allow_html=True)
 st.image(f'{IMG_REPO}/across_metaprogram_top_transcriptions_per_sample/{option}.png')
 
 st.markdown("<h3 style='text-align: center; color: black;'>Pathway Activity across Metaprograms</h1>", unsafe_allow_html=True)
