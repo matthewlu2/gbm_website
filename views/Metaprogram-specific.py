@@ -18,6 +18,14 @@ Use interactive plots and selectors to identify regulatory patterns and drug sen
 file = open('text_files/dotplot_tf_names.txt', 'r')
 list = file.read().splitlines()
 
+tabs_font_css = """
+<style>
+div[class*="stSelectbox"] label {
+  color: purple;
+}
+</style>
+"""
+st.write(tabs_font_css, unsafe_allow_html=True)
 
 option_mp = st.selectbox(
     'Metaprogram',
