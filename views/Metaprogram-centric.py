@@ -21,9 +21,9 @@ div[class*="stSelectbox"] label {
 
 st.write(tabs_font_css, unsafe_allow_html=True)
 
-file = open('text_files/metaprogram_names.txt', 'r')
-list = file.read().splitlines()
-
+# file = open('text_files/metaprogram_names.txt', 'r')
+# list = file.read().splitlines()
+list =  ["AC","Chromatin.Reg","Inflammatory.Mac","Mac","MES","MES.Ast","MES.Hyp","Vasc","Neuron","NPC","Oligo","OPC","Prolif.Metab","Reactive.Ast"]
 option_mp = st.selectbox(
     'Metaprogram',
     list) 
