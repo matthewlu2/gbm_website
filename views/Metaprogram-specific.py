@@ -15,8 +15,9 @@ st.info("""Compare how regulatory features linked to transcriptional metaprogram
 • **Drug**: Assess predicted drug response signatures tied to different metaprograms, highlighting therapeutic vulnerabilities across the cohort.  
 Use interactive plots and selectors to identify regulatory patterns and drug sensitivities tied to key malignant and non-malignant programs.""")
 
-file = open('text_files/metaprogram_name.txt', 'r')
-list = file.read().splitlines()
+# file = open('text_files/metaprogram_name.txt', 'r')
+# list = file.read().splitlines()
+list =  ["AC","Chromatin.Reg","Inflammatory.Mac","Mac","MES","MES.Ast","MES.Hyp","Vasc","Neuron","NPC","Oligo","OPC","Prolif.Metab","Reactive.Ast"]
 
 tabs_font_css = """
 <style>
