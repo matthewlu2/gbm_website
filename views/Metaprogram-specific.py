@@ -15,7 +15,7 @@ st.info("""Compare how regulatory features linked to transcriptional metaprogram
 • **Drug**: Assess predicted drug response signatures tied to different metaprograms, highlighting therapeutic vulnerabilities across the cohort.  
 Use interactive plots and selectors to identify regulatory patterns and drug sensitivities tied to key malignant and non-malignant programs.""")
 
-file = open('text_files/dotplot_tf_names.txt', 'r')
+file = open('text_files/metaprogram_names.txt', 'r')
 list = file.read().splitlines()
 
 tabs_font_css = """
