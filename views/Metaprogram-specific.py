@@ -31,26 +31,7 @@ option_mp = st.selectbox(
     'Metaprogram',
     list) 
 
-# a, b = st.columns([.95, .05])
-# a.markdown("<h3 style='text-align: center; color: black;'>TF</h1>", unsafe_allow_html=True)
-# st.image(f'{IMG_REPO}/{option}.png')
 
-# a1, b1 = st.columns([.95, .05])
-# a1.markdown("<h3 style='text-align: center; color: black;'>Pathway</h1>", unsafe_allow_html=True)
-# st.image(f'{IMG_REPO_2}/{option}.png')
-
-# a2, b2 = st.columns([.95, .05])
-# a2.markdown("<h3 style='text-align: center; color: black;'>Drug Score</h1>", unsafe_allow_html=True)
-# st.image(f'{IMG_REPO_3}/{option}.png')
-
-
-# d_mp = get_sample_metaprograms("./data/sample_metaprograms.pkl")
-# l_mp = d_mp[option]
-
-# option_mp = st.selectbox(
-#     'Metaprogram',
-#     l_mp
-# )
 st.markdown("<h3 style='text-align: center; color: black;'>Top TFs across samples</h1>", unsafe_allow_html=True)
 st.image(f'{IMG_REPO}/across_sample_top_transcriptions_per_metaprogram/{option_mp}.png')
 
