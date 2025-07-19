@@ -3,9 +3,9 @@ import urllib.request
 from persist import persist
 from views.utils import get_sample_metaprograms
 
-IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
-# IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/spatial_drug2cell'
-# IMG_REPO2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/violin_drug2cell'
+# IMG_REPO = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
+IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/spatial_drug2cell'
+IMG_REPO2 = 'https://raw.githubusercontent.com/matthewlu2/gbm_small_data/main/violin_drug2cell'
 
 st.markdown("<h2 style='text-align: center; color: black;'>Drug2Cell Score Maps</h1>", unsafe_allow_html=True)  
 st.write("")
@@ -39,8 +39,11 @@ option2 = a.selectbox(
     key = persist("sample_id")
     ) 
 
-a.image(f'{IMG_REPO}/drug_spatial/{option}/{option2}.png')
-b.image(f'{IMG_REPO}/drug_violin/{option}/{option2}.png')
+# a.image(f'{IMG_REPO}/drug_spatial/{option}/{option2}.png')
+# b.image(f'{IMG_REPO}/drug_violin/{option}/{option2}.png')
+
+a.image(f'{IMG_REPO}/{option}/{option2}.png')
+b.image(f'{IMG_REPO2}/{option}/{option2}.png')
 
 IMG_REPO2 = 'https://raw.githubusercontent.com/osmanbeyoglulab/gbm_data/main'
 st.markdown("<h3 style='text-align: center; color: black;'>Drug2Cell Scores across Metaprogram</h1>", unsafe_allow_html=True)
