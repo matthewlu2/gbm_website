@@ -14,7 +14,7 @@ st.info("Integrate spatial transcriptomic data with Drug2Cell predictions to map
 
 file = open('text_files/drug2cell_names.txt', 'r')
 list = file.read().splitlines()
-
+list = sorted(list)
 a, b = st.columns(2)
 
 tabs_font_css = """
